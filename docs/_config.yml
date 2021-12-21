@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Cesare Spinoso-Di Piano
+email: cesare.spinoso@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is Cesare Spinoso-Di Piano (Pronounced: "Chez-array" or just "Chez") and I'm a Master's Student at McGill
+University in the Department of Computer Science. I am supervised by Dr. Jackie Cheung and Dr. Samira Rahimi. My 
+research focuses on ways of applying natural language processing (NLP) to the field of medicine. We are currently working on using clinical reports to predict the degree of severity of appendicitises in patients pre-surgery. This would have implications in the way operations are scheduled to prioritize patients at a higher risk of developing complications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: something
+github_username:  cesare-spinoso
 
 # Build settings
 markdown: kramdown
