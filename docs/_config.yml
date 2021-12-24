@@ -16,9 +16,7 @@
 title: Cesare Spinoso-Di Piano
 email: cesare.spinoso@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Cesare Spinoso-Di Piano (Pronounced: "Chez-array" or just "Chez") and I'm a Master's Student at McGill
-University in the Department of Computer Science. I am supervised by Dr. Jackie Cheung and Dr. Samira Rahimi. My 
-research focuses on ways of applying natural language processing (NLP) to the field of medicine. We are currently working on using clinical reports to predict the degree of severity of appendicitises in patients pre-surgery. This would have implications in the way operations are scheduled to prioritize patients at a higher risk of developing complications.
+  Personal website for Cesare Spinoso-Di Piano.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: something
