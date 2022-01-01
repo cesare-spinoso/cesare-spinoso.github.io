@@ -16,5 +16,3 @@ I'm currently a Master's student at [McGill University](https://www.cs.mcgill.ca
 I am also a data analyst at the [Research Centre of Sainte-Justine University Hospital](https://research.chusj.org/en/Home) where I most recently collaborated with [Dr. Nicholas Chadi](https://nicholaschadi.com/) and [Dr. Olivier Drouin](https://www.chusj.org/Bio?id=8ee23644-25f9-4390-9283-4e487766971b&lang=en) on studying mental health-related emergency department visits ([more here](https://pubmed.ncbi.nlm.nih.gov/34462192/#affiliation-2)).
 
 I hold a Bachelor's degree in Mathematics, Statistics and Computer Science from Concordia University.
-
-<p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> 
