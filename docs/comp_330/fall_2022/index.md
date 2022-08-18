@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Comp 330 - Fall 2020
 permalink: /comp_330/fall_2020/
 order: 1
