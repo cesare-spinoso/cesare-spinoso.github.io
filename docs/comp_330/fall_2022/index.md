@@ -1,3 +1,10 @@
+---
+layout: page
+title: Comp 330 - Fall 2020
+permalink: /comp_330/fall_2020/
+order: 1
+---
+
 # Theory of Computation - Comp 330
 Welcome to Comp 330! My name is Cesare (Pronounced Chez-array or just Chez) and I am excited to be one of your TAs for the Fall 2022 semester. 
 
