@@ -1,8 +1,7 @@
 ---
-layout: home
-title: Comp 330 - Fall 2020
-permalink: /comp_330/fall_2020/
-order: 1
+layout: page
+title: Comp 330 - Fall 2022
+permalink: /teaching/comp_330/fall_2022/
 ---
 
 # Theory of Computation - Comp 330
