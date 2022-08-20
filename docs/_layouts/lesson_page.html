@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    <h1>{{page.lesson_name}}</h1>
+    {{ content }}
+  </div>
+
+  <div>
+    {% assign selected_pages = site.pages | sort: "order" | where_exp: "item", "item.lesson_name != null" %}
+    {% if page.order > 1 %}
+    {% assign previous_idx = page.order | minus: 2 %}
+    <a href="{{ selected_pages[previous_idx].url | absolute_url }}">Previous:
+      {{selected_pages[previous_idx].lesson_name}}</a> -
+    {% endif %}
+    <a href="/teaching/comp_330/fall_2022">Home</a>
+    {% if page.order < selected_pages.size %} {% assign next_idx=page.order %} - <a
+      href="{{ selected_pages[next_idx].url | absolute_url }}">Next: {{selected_pages[next_idx].lesson_name}}</a>
+    {% endif %}
+    </div>
+
+</article>
