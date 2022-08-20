@@ -1,11 +1,9 @@
 ---
-layout: page
+layout: lesson_page
 permalink: /teaching/comp_330/fall_2022/dfa
 lesson_name: Deterministic Finite Automata (DFA)
 order: 3
 ---
-
-<h1>{{page.lesson_name}}</h1>
 
 These notes will be about DFAs such as the following:
 
