@@ -1,6 +1,6 @@
 ---
 layout: lesson_page
-permalink: /teaching/theoretical_cs/math
+permalink: /teaching/comp_330/fall_2022/math
 lesson_name: Math Preliminaries
 order: 1
 ---
