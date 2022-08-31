@@ -8,7 +8,7 @@ order: 2
 Though I am only a graduate student, I have had the pleasure to tutor students and TA classes in different areas of Mathematics and Computer Science. Some of my teaching material is available on my [youtube channel](https://www.youtube.com/user/cesarespinoso/playlists).
 
 ## Theory of Computation (Comp 330)
-I am happy to be serving as a TA for the Theory of Computation class at McGill University in the Fall 2022 semester. This course has a significant amount of overlap with its Concordia counterpart, but also diverges in the second half where more emphasis is placed on decidability and reducibility. You can find a section specifically dedicated to this course <a href="/teaching/comp_330/fall_2022">here</a>.
+I am happy to be serving as a TA for the Theory of Computation class at McGill University in the Fall 2022 semester. This course has a significant amount of overlap with its Concordia counterpart, but also diverges in the second half where more emphasis is placed on decidability and reducibility. I will be holding office hours where students can drop by and ask me questions.
 
 ## Theoretical Computer Science (Comp 335)
 I had the pleasure of serving as a TA for the Theoretical Computer Science class at Concordia University (known as COMP 335) on three occasions (Summer 2020, Fall 2020 and Summer 2021). Each of those semesters have playlists on my channel which include tutorial recordings and midterm/final exam review videos. You can also find some of the material that I developed with Tianyi Liu and [Prof. Nematollaah Shiri](https://users.encs.concordia.ca/~shiri/) [here](https://drive.google.com/drive/folders/1JDx-N63TB6Ey59NOw2VOIpV4azLk9fo2?usp=sharing).
