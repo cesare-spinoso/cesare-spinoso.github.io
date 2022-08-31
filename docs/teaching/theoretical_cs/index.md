@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/comp_330/fall_2022/
+permalink: /teaching/theoretical_cs
 ---
 
 <h2>Theoretical Computer Science</h2>
