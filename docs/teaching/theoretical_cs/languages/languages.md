@@ -1,6 +1,6 @@
 ---
 layout: lesson_page
-permalink: /teaching/comp_330/fall_2022/languages
+permalink: /teaching/theoretical_cs/languages
 lesson_name: Languages
 order: 2
 ---

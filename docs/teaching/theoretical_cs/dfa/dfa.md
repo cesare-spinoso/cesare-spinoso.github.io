@@ -1,6 +1,6 @@
 ---
 layout: lesson_page
-permalink: /teaching/comp_330/fall_2022/dfa
+permalink: /teaching/theoretical_cs/dfa
 lesson_name: Deterministic Finite Automata (DFA)
 order: 3
 ---
