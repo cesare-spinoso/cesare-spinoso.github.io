@@ -19,5 +19,6 @@ Much like sets, languages also have operations that can be applied to and betwee
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FESDMY3XfZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<h4>Exercises</h4>
 
-
+{% include_relative exercise1.html %}

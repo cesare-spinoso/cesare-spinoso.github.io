@@ -48,6 +48,8 @@ This one is famous! If you remember from your discrete math class, You used this
 
 Used to prove statements on integers (among other things), the proof by induction is a powerful proof technique that I review with another graph theory proof.
 
+Video on the way!
+
 <h4>Proof by construction</h4>
 
 Last but not least, the proof by construction, in which you construct a mathematical object to prove its existence, is the one that you will be seeing the most in this course.
