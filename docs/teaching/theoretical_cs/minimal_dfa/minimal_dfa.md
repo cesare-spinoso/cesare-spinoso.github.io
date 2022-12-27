@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/minimal_dfa
 lesson_name: Minimal DFA
-order: 4
+order: 6
 ---
 
 This section will be about minimal DFAs. You will see what it means for a DFA to be minimal and how to convert a DFA to its minimal equivalent. You can find the notes related to this section [here](minimal_dfa.pdf).
