@@ -5,6 +5,8 @@ lesson_name: Non-Deterministic Finite Automata (NFA)
 order: 4
 ---
 
+<!-- This section is to be redone, with more exercises -->
+
 This section will be about Non-Deterministic Finite Automata (NFA) and their connection to DFAs. You will see what an NFA is, how to walk through the computation of an NFA, and how NFAs and DFAs are related. You can find the notes related to this section [here](nfa.pdf).
 
 <h4>What's an NFA?</h4>

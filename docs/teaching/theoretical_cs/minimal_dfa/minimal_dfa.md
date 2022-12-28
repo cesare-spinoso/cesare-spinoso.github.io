@@ -2,8 +2,10 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/minimal_dfa
 lesson_name: Minimal DFA
-order: 6
+order: 7
 ---
+
+<!-- This section is to be redone, with a proof of correctness video -->
 
 This section will be about minimal DFAs. You will see what it means for a DFA to be minimal and how to convert a DFA to its minimal equivalent. You can find the notes related to this section [here](minimal_dfa.pdf).
 
@@ -21,4 +23,10 @@ Are you confused? I don't blame you! I was confused the first time I saw the min
 
 <h4>Exercises</h4>
 
+<!-- This video has a mistake in it, needs to be corrected -->
+
 {% include_relative exercise_6states.html %}
+
+<!-- Include exercise about minimal NFA -->
+
+<!-- Include T/F about minimality and identify of languages -->
