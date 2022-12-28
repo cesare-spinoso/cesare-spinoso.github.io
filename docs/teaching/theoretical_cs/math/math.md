@@ -34,7 +34,7 @@ Finally, proofs will be another big part of the material in this course. I provi
 
 <h4>Proving that two sets are equal</h4>
 
-How do you prove that two sets are equal? I discuss this and provide an example to make things a little more concrete.
+How do you prove that two sets are equal? I discuss this and provide an example to make things a little more concrete. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kmg2QcV92AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
