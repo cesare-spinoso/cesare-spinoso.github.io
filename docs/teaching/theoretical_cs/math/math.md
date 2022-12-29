@@ -42,11 +42,9 @@ How do you prove that two sets are equal? I discuss this and provide an example 
 
 The Pigeonhole Principle (PHP) is a simple yet powerful concept that you will find in multiple proofs for this course. I discuss the principle and how it can used to prove a property about simple graphs.
 
-<h5>The Pigeonhole Principle</h5>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ihUFCy9PLQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h5>Using the PHP to prove a statement about graphs</h5>
+<h4>Using the PHP to prove a statement about graphs</h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/agjOcfK45OA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -60,11 +58,11 @@ If you took any type of discrete math class, you used this technique to prove th
 
 Used to prove statements on integers (among other things), the proof by induction is a powerful proof technique that I review with another graph theory proof.
 
-<h5>The Principle of Mathematical Induction</h5>
+<h4>The Principle of Mathematical Induction</h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qQzB15UN2sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h5>Using induction to prove a statement about trees</h5>
+<h4>Using induction to prove a statement about trees</h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pRkOWgelOpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
