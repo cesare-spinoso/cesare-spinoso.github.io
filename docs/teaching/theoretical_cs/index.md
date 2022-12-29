@@ -33,3 +33,7 @@ Some of the concepts that you will learn here will be very different from anythi
 In teaching this material over the last few years, I have noticed that students take in concepts at very different paces. This means that some of you will have no problem solving assignment questions easily, with not much practice. Others will struggle more. For those of you in the latter group (which I wholeheartedly admit I was a part of), do not despair! Remember that you're not alone in this journey.
 
 In my opinion, the topics you will come across in a theory of computation course are some of the most fun and rewarding ones you'll see in computer science. I hope this has gotten you pumped and ready to learn!
+
+<h3>Recognition</h3>
+
+I want to thank [Tianyi Liu](https://ca.linkedin.com/in/tianyi-liu-705048186) who was an excellent TA I had the chance of working with while I TAed a version of this course at Concordia and with whom I developed some of this content. I also want to thank [Prof. Shiri](https://www.concordia.ca/ginacody/computer-science-software-eng/faculty.html?fpid=nematollaah-shiri) who helped us in reviewing the content of the tutorials. Finally, I also want to thank [Prof. Panangaden](https://www.cs.mcgill.ca/~prakash/) for taking a chance and hiring me as a TA for a similar version of this course at McGill.
