@@ -66,13 +66,13 @@
     \begin{itemize}
         \item \textbf{Example 1.} $A_1 = \{1,2,3,...,75 \}$ Does $2 \in A_1$? Does $-45 \in A_1$?
         \item \textbf{Example 2.} $A_2 = \{m^2 + 1: m \in \mathbb{Z}  \}$
-            \begin{itemize}
-                \item \textbf{1.} Does $2 \in A_2$?
-                \item \textbf{2.} $65 \in A_2$?
-                \item \textbf{3.} $-17 \in A_2$?
-                \item \textbf{4.} $49 \in A_2$?
-                \item Would any of the answers be different if $m \in \mathbb{R}$?
-            \end{itemize}
+              \begin{itemize}
+                  \item \textbf{1.} Does $2 \in A_2$?
+                  \item \textbf{2.} $65 \in A_2$?
+                  \item \textbf{3.} $-17 \in A_2$?
+                  \item \textbf{4.} $49 \in A_2$?
+                  \item Would any of the answers be different if $m \in \mathbb{R}$?
+              \end{itemize}
     \end{itemize}
 \end{frame}
 
@@ -406,6 +406,14 @@
     \textbf{Example.} Prove that $\overline{A \cap B} = \overline{A} \cup \overline{B}$.
 \end{frame}
 
+\begin{frame}{Pigeonhole Principle}
+    \textbf{Proof Technique.} The Pigeonhole Principle states that if there are $n+1$ pigeons occupying $n$ holes, there must be a hole with two pigeons.
+\end{frame}
+
+\begin{frame}[t]{Example}
+    \textbf{Example.} Let $G = (V, E)$ be a simple graph, if $|V| \geq 2$ there exists two vertices $u, v \in V$ with the same degree.
+\end{frame}
+
 \begin{frame}{Proof by contradiction}
     \textbf{Proof Technique.} In a proof by contradiction, you assume that the premise of the statement you're trying to prove is false i.e. in if $P$ then $Q$ assume $P$ is false. You then reason through a sequence of steps to arrive to a contradiction which may be 1. a refutation of what you initially assumed or 2. a refutation of something you know/have proved to be true.
 \end{frame}
@@ -424,8 +432,9 @@
 \end{frame}
 
 \begin{frame}[t]{Example}
-    \textbf{Example.} Let $G = (V, E)$ be a graph, if $|V| \geq 2$ there exists two vertices $u, v \in V$ with the same degree.
+    \textbf{Example.} Let $T = (V, E)$ be a tree. Prove that $|E| = |V| - 1$.
 \end{frame}
+
 
 \begin{frame}{Proof by construction}
     \textbf{Proof Technique.} In statements that claim the existence of some property or object, one common approach is to construct this property or object in the proof. This proof technique will be \underline{very common} in automata theory as you will see shortly.

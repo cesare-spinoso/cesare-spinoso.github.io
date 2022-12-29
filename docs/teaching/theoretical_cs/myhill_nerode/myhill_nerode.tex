@@ -1,0 +1,291 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+
+%For linking email and website
+\usepackage{hyperref}
+
+%For enumeration as words
+\usepackage{blindtext}
+\usepackage{enumitem}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+
+\title{Theory of Computation}
+\subtitle{The Myhill-Nerode Theorem}
+\date{}
+\author{Guest lecture delivered by Cesare Spinoso-Di Piano \newline Material developed by Prof. Prakash Panangaden}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Plan for today}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Motivation (1)}
+
+\begin{frame}[t]{What you've seen so far}
+    $\Sigma \neq \emptyset$, $L \subseteq \Sigma^*$ is regular if and only if
+
+\end{frame}
+
+\begin{frame}{How do we prove a language is not regular?}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{When the PL fails...}
+    Show that the language $L = \{a^ib^jc^k : \text{if } i = 1 \text{ then } j = k\}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Is all hope lost?}
+    No!
+    \begin{itemize}
+        \setlength\itemsep{7em}
+        \item Use closure properties.
+        \item Use the Myhill-Nerode Theorem (today).
+    \end{itemize}
+\end{frame}
+
+\section{Definitions and lemmas}
+
+\begin{frame}[t]{Recall - String concatenation}
+    \textbf{Definition (String concatenation).} Let $\Sigma \neq \emptyset, x, y \in \Sigma^*$. The \textbf{string concatenation} written either as $xy$ or $x \cdot y$ is the operation of appending the string $y$ to the string $x$.
+
+
+
+    \textbf{Example.} $\Sigma = \{a, b, c, \dots, z\}$, $x = cat$, $y = dog$ then $x \cdot y = catdog$.
+
+
+
+    \textbf{Properties of concatenation.}
+    \begin{itemize}
+        \setlength\itemsep{4em}
+        \item Associativity
+        \item Unit element
+    \end{itemize}
+
+    \vspace{4em}
+
+    Together with a (non-empty) alphabet, the string concatenation forms a \textbf{monoid}.
+
+\end{frame}
+
+\begin{frame}{Monoid}
+    \textbf{Definition (Monoid).} A \textbf{monoid} is a set $S$ with a binary associative operation and an identity element for this operation. Sometimes denoted as the triple $(S, \cdot, e)$.
+
+    \textbf{Examples.}
+    \begin{itemize}
+        \setlength\itemsep{4em}
+        \item $(\mathbb{N}, +, 0)$
+        \item $(\Sigma \neq \emptyset, \cdot, \epsilon)$
+        \item $(S \rightarrow S, \circ, \text{id})$
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Recall - Equivalence relations}
+    \textbf{Definition (Equivalence relation).} Given the set $X$, the relation $X \times X$ is an \textbf{equivalence relation} if it is \textbf{reflexive}, \textbf{symmetric} and \textbf{transitive}.
+
+    \textbf{Definition (Equivalence class).}  Given the set $X$, the \textbf{equivalence class} of $x \in X$ for the equivalence relation $R$ is the set $[x] := \{y \in X: xRy\}$. The set of equivalence classes is denoted $X/R$.
+
+    \textbf{Definition (Index of an equivalence relation).} Given the set $X$, the number of equivalence classes for the equivalence relation $R$ is called the \textbf{index} of $R$.
+
+
+    \textbf{Example.} $X = \mathbb{Z}$, $\forall x, y \in X, xRy \iff x \mod 5 = y \mod 5$. What is the index of $R$?
+\end{frame}
+
+\begin{frame}[t]{When concatenation and equivalence relations interact}
+    \textbf{Definition (Right invariance).} An equivalence relation $R$ on $\Sigma^*$ is said to be \textbf{right-invariant} if
+    \[
+        \forall x, y \in \Sigma^*, xRy \Rightarrow \forall z \in \Sigma^*, xzRyz
+    \]
+
+    That is, if a pair of strings are related and we stick a string to the right of each of them, then this new pair of strings will also be related. And this will hold \textit{for any string used to stick to the original pair of strings}.
+
+\end{frame}
+
+\begin{frame}{The ``extended'' transition function $\delta^*$}
+    For a DFA $M=(Q, \Sigma, q_0, \delta, F)$ we defined $\delta^*: Q \times \Sigma^* \rightarrow Q$ inductively as
+    \[
+        \forall q \in Q, \delta^*(q, \epsilon) = q \text{ and } \forall a \in \Sigma, x \in \Sigma^*, \delta^*(q, ax) = \delta^*(\delta(q, a), x)
+    \]
+    You can show by induction (on the length of the string) that
+    \[
+        \forall x, y \in \Sigma^*, \delta^*(q, xy) = \delta^*(\delta^*(q, x), y)
+    \]
+\end{frame}
+
+\begin{frame}[t]{$\delta^*$ as an equivalence relation}
+    \textbf{Definition ($R_M$).} For a fixed DFA $M=(Q, \Sigma, q_0, \delta, F)$, define the relation on $\Sigma^*$, denoted $R_M$, as follows
+    \[
+        \forall x, y \in \Sigma^*, xR_My \iff \delta^*(q_0, x) = \delta^*(q_0, y)
+    \]
+    That is, for a given DFA $M$, two strings are related if $M$ ends at the same state when reading both of them.
+
+    \textbf{Claim 1.} $R_M$ is an equivalence relation. Why?
+
+    \textbf{Claim 2.} $R_M$ is a \textbf{right-invariant} equivalence relation.
+
+    \textit{Proof.}
+    \vfill
+    \vspace{2em}
+    This right-invariant equivalence relation will come in handy in a few slides from now.
+
+\end{frame}
+
+\begin{frame}[t]{Another \textit{very familiar} equivalence relation}
+    This equivalence relation will be based on \underline{\textbf{ANY}} language (not just regular languages).
+
+    \textbf{Definition.} Given any language $L \subseteq \Sigma^*$, we define a relation $\equiv_L$ on $\Sigma^*$ as follows
+    \[
+        x \equiv_L y \iff \forall z \in \Sigma^*, xz \in L \iff yz \in L
+    \]
+    \textbf{Claim 1.} $\equiv_L$ is an equivalence relation. Prove it!
+
+    \textbf{Claim 2.} For any two related strings $x, y$, they are \textbf{either} both in $L$ \textbf{or} neither of them is in $L$. Why?
+
+    \textbf{Example.} $\Sigma = \{0, 1\}, L = \{w \in \Sigma^* : |w| \mod 2 = 0\}$
+    \begin{itemize}
+        \setlength\itemsep{2em}
+        \item $0 \equiv_L 00$?
+        \item $10 \equiv_L 01$?
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{A consequential lemma}
+    \textbf{Lemma.} The equivalence relation $\equiv_L$ is right-invariant.
+
+    \textit{Proof.}
+
+    \vfill
+
+    \vspace{14em}
+
+    This lemma will be \textbf{crucial} in the proof of the following theorem.
+\end{frame}
+
+
+
+\section{The Myhill-Nerode Theorem}
+
+\begin{frame}{The main theorem}
+    \textbf{Theorem (Myhill-Nerode).} The following three statements are equivalent:
+    \begin{itemize}
+        \item[(1)] The language $L$ is accepted by a DFA.
+        \item[(2)] The language $L$ is equal to the union of \textit{some} equivalence classes for \textit{some} right-invariant equivalence relation of finite index.
+        \item[(3)] The equivalence relation $\equiv_L$ has finite index. In fact, any right-invariant equivalence relation $R$ with the property that $L$ is the union of some of the equivalence classes of $R$ will have index greater than $\equiv_L$. (This will come in handy when proving uniqueness of minimality.)
+    \end{itemize}
+
+    What is the theorem telling us?
+
+    \vspace{3em}
+
+    We will prove this by showing $(1) \Rightarrow (2), (2) \Rightarrow (3), (3) \Rightarrow (1)$.
+
+\end{frame}
+
+\begin{frame}[t]{Proof - $(1) \Rightarrow (2)$}
+    \textbf{Statement:} The language $L$ is accepted by a DFA. $\Rightarrow$ The language $L$ is equal to the union of \textit{some} equivalence classes for \textit{some} right-invariant equivalence relation of finite index.
+
+\end{frame}
+
+\begin{frame}[t]{Proof - $(2) \Rightarrow (3)$}
+    \textbf{Statement:} The language $L$ is equal to the union of \textit{some} equivalence classes for \textit{some} right-invariant equivalence relation of finite index. $\Rightarrow$ The equivalence relation $\equiv_L$ has finite index. (Plus some other stuff)
+
+\end{frame}
+
+\begin{frame}[t]{Proof - $(3) \Rightarrow (1)$}
+    \textbf{Statement:} The equivalence relation $\equiv_L$ has finite index. $\Rightarrow$ The language $L$ is accepted by a DFA.
+
+\end{frame}
+
+\section{Motivation (2)}
+
+\begin{frame}[t]{Who cares?}
+    Recall(!) the language $L = \{a^ib^jc^k : \text{if } i = 1 \text{ then } j = k\}$. We can use M-N to \textit{easily} prove that $L$ is not regular.
+
+    \textbf{How?}
+    \begin{itemize}
+        \item[1.] Pick an infinite set of strings $S$
+        \item[2.] Show that $\forall x, y \in S, x \neq y \Rightarrow x \not\equiv_L y$
+        \item[3.] This implies that each element in $S$ belongs to a different equivalence class of $\equiv_L$.
+        \item[4.] Therefore $\equiv_L$ is not finite, so by M-N $L$ is not regular!
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Example - Continued}
+    Showing that $L = \{a^ib^jc^k : \text{if } i = 1 \text{ then } j = k\}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \begin{itemize}
+        \setlength\itemsep{7em}
+        \item \textbf{Exercise.} Using M-N, show that $L = \{a^n b^{n^2} : n \geq 0 \}$ is not regular.
+        \item \textbf{Exercise.} Using M-N, show that $L = \{w \in \{0,1\}^* : |w| \mod 3 = 0\}$ is regular. (Hint: $\equiv_L$ should have index 3.)
+    \end{itemize}
+\end{frame}
+
+\section{Connection with minimal DFAs}
+
+\begin{frame}{Uniqueness of minimal DFA}
+    \begin{itemize}
+        \item[$\bullet$] A few lectures ago we saw a DFA minimization algorithm that we claimed (without proof) produced the \textbf{unique} minimal DFA.
+        \item[$\bullet$] We want to show that the algorithm could not have stumbled on a \textit{different} minimal DFA that accepted the same language.
+        \item[$\bullet$] To do this, we first have to define what it means for a DFA to be the same as (and, by extension, different than) another DFA.
+        \item[\textbf{NOTE}] This is not true for NFAs! Two NFAs can be ``minimal`` while being completely ``different''.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Isomorphic DFAs}
+    We call the concept of two DFAs being the same a DFA ``isomorphism''.\footnote{Different mathematical objects have different definitions of isomorphism, for instance, graph isomorphisms.}
+
+    \textbf{Definition (DFA isomorphism).}  We say two DFAs $M=(Q, \Sigma, q_0, \delta, F)$ and $M'=(Q', \Sigma, q_0', \delta', F')$ are \textbf{isomorphic} if there is a bijection $\phi$ where $\phi : Q \rightarrow Q'$ such that 
+    \begin{itemize}
+        \item[1.] $\phi(q_0) = q_0'$
+        \item[2.] $\phi(\delta(q, a)) = \delta'(\phi(q), a)$
+              \vspace{5em}
+        \item[3.] $q \in F \iff \phi(q) \in F'$
+    \end{itemize}
+
+    \textbf{Fact.} If $f: X \rightarrow Y$ and $|X| = |Y|$ then $f$ is injective $\iff$ $f$ is surjective. (Why? Try induction on $|X| = |Y|$).
+
+    \vspace{2em}
+
+\end{frame}
+
+\begin{frame}{Uniqueness proposition}
+    The following proposition will allow us to show that the minimal DFA found in the DFA minimization lecture was unique \textit{up to isomorphism}.
+    \textbf{Proposition.} The machine described in the last part of the M-N proof ($(3) \Rightarrow (1)$) is the \textit{unique} minimal DFA that recognizes the language $L$.
+\end{frame}
+
+\begin{frame}[t]{Proof of the proposition}
+    \textit{Proof.}
+
+\end{frame}
+
+\begin{frame}{Again, so what?}
+    You should now be able to answer the following questions:
+    \begin{itemize}
+        \item[$\bullet$] How do I create an algorithm (and prove its correctness) that checks whether two NFAs $N_1, N_2$ accept the same language?
+        \item[$\bullet$] How do I create an algorithm (and prove its correctness) that checks that two regular expressions $R_1, R_2$ recognize the same language?
+    \end{itemize}
+\end{frame}
+
+
+
+\end{document}

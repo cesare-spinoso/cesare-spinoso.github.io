@@ -6,3 +6,7 @@ order: 5
 ---
 
 Content on the way!
+
+<!-- Basic closure properties, how to prove them -->
+
+<!-- More interesting closure properties -->

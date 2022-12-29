@@ -58,11 +58,9 @@
 
 
 \begin{frame}{DFAs as language accepters}
-    \textbf{Consider a DFA M}\\
-    \textbf{Definition.} The language \textbf{L(M)} includes all strings (over the alphabet $\Sigma$) accepted by \textbf{M}\\
-    {$L(M)$} = \{strings that drive \textbf{M} to a final state\}\\\bigskip
-    Which is defined formally as follows:\\
-    $L(M) = \{w\in \Sigma ^*: \delta ^*(q_0,w)\in F\}$, where $\delta ^*$ is extended transition function $\delta ^*: Q\times \Sigma ^*\rightarrow Q$.
+    \textbf{Definition.} Let $M$ be a DFA. The language $L(M)$ includes all strings (over the alphabet $\Sigma$) accepted by $M$. That is, $L(M)$ = \{all strings that ``drive'' $M$ to a final state\}. 
+
+    Formally, we write this as $L(M) = \{w \in \Sigma ^*: \delta ^*(q_0,w)\in F\}$, where $\delta^*$ is the extended transition function $\delta ^*: Q\times \Sigma ^*\rightarrow Q$ which, given a state $q$ and a string $w$, returns the state that $M$ would be in after reading $w$ starting from $q$.
 \end{frame}
 
 
@@ -355,7 +353,7 @@
 
 \section{Regular Languages}
 \begin{frame}{Regular Languages}
-    \textbf{Definition.} A language $L$ is regular if there exists a DFA $M$ such that $L(M) = L$. One way \textit{to show that a language $L$ is regular is to show there is a DFA $M$ that accepts it}.
+    \textbf{Definition.} A language $L$ is regular if there exists a DFA $M$ such that $L(M) = L$. One way to show that a language $L$ is regular is to show there is a DFA $M$ that accepts it.
 \end{frame}
 
 \begin{frame}[t]{Example}
