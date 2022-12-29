@@ -38,6 +38,18 @@ How do you prove that two sets are equal? I discuss this and provide an example 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kmg2QcV92AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<h4>The Pigeonhole Principle</h4>
+
+The Pigeonhole Principle (PHP) is a simple yet powerful concept that you will find in multiple proofs for this course. I discuss the principle and how it can used to prove a property about simple graphs.
+
+<h5>The Pigeonhole Principle</h5>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihUFCy9PLQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h5>Using the PHP to prove a statement about graphs</h5>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/agjOcfK45OA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h4>Proof by contradiction</h4>
 
 If you took any type of discrete math class, you used this technique to prove that $$\sqrt{2}$$ is irrational! I discuss the general idea of proving something by contradiction and then provide a proof by contradiction for a statement on graphs.
@@ -48,7 +60,13 @@ If you took any type of discrete math class, you used this technique to prove th
 
 Used to prove statements on integers (among other things), the proof by induction is a powerful proof technique that I review with another graph theory proof.
 
-Video on the way!
+<h5>The Principle of Mathematical Induction</h5>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qQzB15UN2sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h5>Using induction to prove a statement about trees</h5>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pRkOWgelOpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h4>Proof by construction</h4>
 
@@ -56,4 +74,6 @@ Last but not least, the proof by construction, in which you construct a mathemat
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rpDIpZDP604" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Exercises
 
+{% include_relative exercise_degree1.html %}

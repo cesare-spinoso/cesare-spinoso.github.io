@@ -1,0 +1,7 @@
+<div id="question_degree1">
+    <b>Exercise. </b> Let \(T=(V, E)\) be a tree with \(|V| \geq 2\), show that \(T\) must have at least 2 vertices with degree 1. I used this fact in the proof by induction video. In fact, I used a weaker statement that said that there must be at least 1 vertex of degree 1.
+</div>
+<button onclick="HideShowElement('answer_degree1')">Show/Hide Answer</button>
+<div id="answer_degree1" style="display: none;">
+    Consider a path \(P\) in the tree \(T\) of longest length. Denote the path as a sequence of vertices \(u_1, u_2, \dots, u_m\) where \(2 \leq m \leq |V|\). Then the vertices \(u_1\) and \(u_m\) must have degree 1. Otherwise, if either had degree larger than 2, then we could extend the path \(P\) vertex which is a contradiction since we assumed that \(P\) was a longest length path. Note that the additional vertex \(u_1\) or \(u_m\) would be connected to could not be within the path \(P\) as this would create a cycle. Thus, \(T\) must have at least 2 vertices with degree 1.
+</div>
