@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/myhill_nerode
 lesson_name: Myhill-Nerode Theorem
-order: 8
+order: 9
 ---
 
 This section will explore the Myhill-Nerode Theorem due to John Myhill and Anil Nerode who proved this result in 1958 ([link to paper](https://www.ams.org/journals/proc/1958-009-04/S0002-9939-1958-0135681-9/)). It provides a necessary and sufficient condition for a language $$L$$ to be regular. As we will see, it can be used to prove that a language is regular or not regular which none of the techniques we've seen so far allow us to do. Furthermore, the M-N theorem can be used to prove the uniqueness of minimal DFAs. That is, we can use the M-N theorem to prove that the DFA $$M'$$ that results from the minimization algorithm is the unique minimal DFA that accepts the language $$L(M')$$. (This was something I claimed in a previous section without proof.) 

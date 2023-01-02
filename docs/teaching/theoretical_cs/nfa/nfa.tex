@@ -24,7 +24,7 @@
 
 
 \title{Theory of Computation}
-\subtitle{Tutorial 4 - NFAs}
+\subtitle{Tutorial - NFAs}
 \date{}
 \author{Cesare Spinoso-Di Piano}
 
@@ -480,7 +480,7 @@
     \textbf{Example.} Converting the NFA $N$ to a DFA $M$ using the procedure presented above.
     \begin{enumerate}[Step 1.]
         \item Begin with the start state $S_0 \coloneqq \{q_0\}$.
-        \item Find all the states that can be reached from $S_0$ for each letter in $\Sigma$. $\delta'(S_0,0) = \underbrace{\{q_0, q1\}}_{\text{\textcolor{red}{New state!}}}$, $\delta'(S_0,1) = \{q_0\}$
+        \item Find all the states that can be reached from $S_0$ for each letter in $\Sigma$. $\delta'(S_0,0) = \underbrace{\{q_0, q_1\}}_{\text{\textcolor{red}{New state!}}}$, $\delta'(S_0,1) = \{q_0\}$
     \end{enumerate}
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
@@ -593,7 +593,7 @@
 \end{frame}
 
 \begin{frame}{Exercise}
-    \textbf{Exercise.} Convert the following NFA $N$ into an equivalent DFA. $M$ Your conversion should ensure that $L(N) = L(M)$. $\Sigma = \{a, b\}$.
+    \textbf{Exercise.} Convert the following NFA $N$ into an equivalent DFA $M$. Your conversion should ensure that $L(N) = L(M)$. $\Sigma = \{a, b\}$.
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
         \tikzstyle{every node}+=[inner sep=0pt]
