@@ -8,9 +8,14 @@
 %For linking email and website
 \usepackage{hyperref}
 
+% For \coloneqq
+\usepackage{mathtools}
+
 %For enumeration as words
 \usepackage{blindtext}
-\usepackage{enumitem}
+\usepackage{enumerate}
+
+\usepackage{multirow}
 
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
@@ -19,7 +24,7 @@
 
 
 \title{Theory of Computation}
-\subtitle{Tutorial 5 - NFAs}
+\subtitle{Tutorial - NFAs}
 \date{}
 \author{Cesare Spinoso-Di Piano}
 
@@ -35,7 +40,11 @@
 
 \section{NFAs}
 
-\begin{frame}[t]{Introduction to NFAs}
+\begin{frame}{NFAs}
+
+\end{frame}
+
+\begin{frame}[t]{Formal definition of an NFA}
     \textbf{Definition.} A \textbf{\underline{nondeterministic} finite automaton (NFA)} $M$ is a 5 element tuple $M = (Q, \Sigma, \delta, q_0, F)$ where
     \begin{itemize}
         \item $Q$ is the set of all states
@@ -44,26 +53,26 @@
         \item $q_0$ is the (\underline{unique}) initial state
         \item $F$ is the set of final states
     \end{itemize}
-    A NFA is a machine that reads an input string and decides whether to accept it.\\
+    An NFA is a machine that reads an input string and either accepts it or rejects it.
+
     \textcolor{red}{*\textbf{Unlike a DFA: }}
     The transition function of an NFA can accept $\lambda$ and \textbf{always} returns a set.
 \end{frame}
 
 
-\begin{frame}{Introduction to NFAs}
+\begin{frame}{NFAs as language accepters}
+    \textbf{Non-Determinism.} Let $N$ be an NFA with input string $w$. Non-determinism allows $N$ to try \textit{all possible walks}. If at least one walk leads to a final state, then $N$ accepts $w$.
 
-    \textbf{Consider a NFA M}\\
-    Given a string $w$, \textbf{M} tries all possible walks. If, at the end of the string, ANY of the walks end in a final state the string is accepted. Otherwise, it is rejected.\\\bigskip
-
-    \textbf{Definition.} The language \textbf{L(M)} includes all strings (over the alphabet $\Sigma$) that are accepted by \textbf{M}.\\
-    {$L(M)$} = \{strings that drive \textbf{M} to a final state\}\\\bigskip
-    Formally:\\
-    $L(M) = \{w\in \Sigma ^*: \delta ^*(q_0,w) \text{ contains at least one final state}\}$, where $\delta ^*$ is the extended transition function $\delta ^*: Q\times \Sigma ^*\rightarrow 2^Q$.
+    \textbf{Definition.} Formally, given an NFA $N$ the language accepted by $N$ is
+    \[
+        L(N) = \{w \in \Sigma ^*: \delta^*(q_0, w) \cap F \neq \emptyset\}
+    \]
+    where $\delta^*$ is the extended transition function $\delta^*: Q \times \Sigma^* \rightarrow 2^Q$.
 \end{frame}
 
 
 \begin{frame}{Example}
-    \textbf{Example.} The following is an NFA \textbf{M} where $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$ ($\Sigma \{a\}$).
+    \textbf{Example.} Consider the following NFA over the alphabet $\Sigma = \{a\}$.
 
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
@@ -98,7 +107,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: \textcolor{red}{\^{}}aa}
 
     \begin{center}
@@ -134,7 +142,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: \textcolor{red}aa}
 
     \begin{center}
@@ -170,7 +177,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: a\textcolor{red}a} \\
     $\delta(q_1, a) = \emptyset$, no where to go. Are we done?
 
@@ -207,7 +213,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: \textcolor{red}{\^{}}aa } \\
     Are we done? No, \textbf{M} tries another walk.
 
@@ -244,7 +249,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: \textcolor{red}aa } \\
 
     \begin{center}
@@ -282,7 +286,6 @@
 
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: a\textcolor{red}a } \\
 
     \begin{center}
@@ -320,7 +323,6 @@
 \end{frame}
 
 \begin{frame}{Example - Tracing Input}
-    $\textbf{L(M)} = \{a\} \cup \{a^{2k}: k > 0\}$\\
     \textbf{Input String: aaa} \\
 
     \begin{center}
@@ -354,6 +356,8 @@
     \end{center}
 
     In both traces (top and bottom), do not end up in a final state. \textbf{M} rejects this string.
+
+    What is the language accepted by this NFA?
 \end{frame}
 
 \begin{frame}[t]{Exercise}
@@ -386,37 +390,49 @@
         \end{tikzpicture}
     \end{center}
 
-    What is \begin{itemize}
-        \item 1. $\delta^*(q_0, 01) = $? Is 01 accepted by this NFA?
+    \begin{itemize}
+        \item What is $\delta^*(q_0, 01)$?
+        \item Is 01 accepted by this NFA?
+        \item What is the language accepted by this NFA?
     \end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.}  Create an NFA that accepts the language $\{xwx : x \in \{0, 1\}, w \in \{0, 1\}^*\}$.
 
 \end{frame}
 
 \section{NFA-to-DFA}
 
 \begin{frame}{NFA-to-DFA}
-    Given an NFA $N = (Q, \Sigma, \delta, q_0, F)$, how can we convert it to a DFA $M = (Q', \Sigma, \delta', q_0', F')$?\\\bigskip
-    Converting a NFA to DFA is also called \textbf{Subset Construction}.\par
-    \begin{itemize}
-        \item 1) Step 1: Start from the initial state S ($S = \{q_0\}$).
-        \item 2) Step 2: For each symbol $a \in \Sigma$, find all the states that can be reached from S: $\delta'(S,a) = \underset{p \in S}\bigcup\delta(p,a)$.
-        \item 3) Step 3: Repeat Step 2 on every new state that is generated. Repeat until no new states are produced.
-        \item 4) Step 4: Draw the DFA with states and edges from Step 3. \\
-    \end{itemize}
-    The initial state for the DFA will be $\{q_0\}$. The final states of the DFA will be all those states $S$ that contain a final state from $F$. If the original NFA $N$ accepts $\lambda$, make $\{q_0\}$ a final state.
+
+\end{frame}
+
+\begin{frame}{NFA-to-DFA Algorithm}
+    Given an NFA $N = (Q, \Sigma, \delta, q_0, F)$, how can we convert it to a DFA $M = (Q', \Sigma, \delta', S_0, F')$ such that $L(N) = L(M)$?
+
+    Procedure:
+    \begin{enumerate}[Step 1: ]
+        \item Create an initial state $S_0$. Assign it to $\{q_0\}$.
+        \item For each symbol $a \in \Sigma$, find all the states in $N$ that can be reached from each of the states in $S_0$. The set of reachable states in $N$ will become a state in $M$ i.e. $\delta'(S, a) = \underset{p \in S_0}\bigcup\delta(p,a)$.
+        \item Repeat Step 2 on every new state $S$ (which are \textit{sets} of states of $N$) that is generated. Repeat until no new states are found.
+        \item Assign $Q'$ to the set of states generated in Step 3. $\delta'$ is defined as above.
+    \end{enumerate}
+    The initial state for the DFA will be $S_0 \coloneqq \{q_0\}$. The final states of the DFA will be all those states $S$ that contain a final state from $F$ (from the original $N$). Finally, if the original NFA $N$ accepts $\lambda$, make $S_0$ a final state.
 \end{frame}
 
 \begin{frame}{Example}
-    \textbf{Example.} Convert the following NFA $M$ to a DFA. $M$ is the NFA accepting all strings (over $\Sigma = \{0,1\}$) that end in 01.
+    \textbf{Example.} Consider the following NFA $N$. $\Sigma = \{0, 1\}$. What is the language accepted by $N$?
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
             \tikzstyle{every node}+=[inner sep=0pt]
             \draw [black] (19.1,-20.9) circle (3);
             \draw (19.1,-20.9) node {$q_0$};
             \draw [black] (30.8,-21.1) circle (3);
-            \draw (30.8,-21.1) node {$q1$};
+            \draw (30.8,-21.1) node {$q_1$};
             \draw [black] (42.1,-21.1) circle (3);
-            \draw (42.1,-21.1) node {$q2$};
+            \draw (42.1,-21.1) node {$q_2$};
             \draw [black] (42.1,-21.1) circle (2.4);
             \draw [black] (10.3,-20.9) -- (16.1,-20.9);
             \fill [black] (16.1,-20.9) -- (15.3,-20.4) -- (15.3,-21.4);
@@ -434,20 +450,16 @@
 \end{frame}
 
 \begin{frame}{Example}
-    \textbf{Example.} Converting the NFA $M$ to a DFA:
-    \begin{itemize}
-        \item 1) Step 1: Start from the start state S. \textcolor{red}{$S=\{q_0\}$}
-        \item 2) Step 2: Find all the states that can be reached from S: $\forall a\in\Sigma$, $\delta'(S,a) = \underset{p \in S}\bigcup\delta_{N}(p,a)$.  \textcolor{red}{$\delta'(S,0) = \{q_0, q1\}$, $\delta'(S,1) = \{q_0\}$}
-    \end{itemize}
+    \textbf{Example.} Convert the NFA $N$ to a DFA $M$ such that $L(N) = L(M)$.
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
             \tikzstyle{every node}+=[inner sep=0pt]
             \draw [black] (19.1,-20.9) circle (3);
             \draw (19.1,-20.9) node {$q_0$};
             \draw [black] (30.8,-21.1) circle (3);
-            \draw (30.8,-21.1) node {$q1$};
+            \draw (30.8,-21.1) node {$q_1$};
             \draw [black] (42.1,-21.1) circle (3);
-            \draw (42.1,-21.1) node {$q2$};
+            \draw (42.1,-21.1) node {$q_2$};
             \draw [black] (42.1,-21.1) circle (2.4);
             \draw [black] (10.3,-20.9) -- (16.1,-20.9);
             \fill [black] (16.1,-20.9) -- (15.3,-20.4) -- (15.3,-21.4);
@@ -465,20 +477,49 @@
 \end{frame}
 
 \begin{frame}{Example}
-    \textbf{Example.}
-    \begin{itemize}
-        \item 3) Step 3: Repeat Step 2 on every new state that is generated. Repeat until no new states are produced.
-
-    \end{itemize}
+    \textbf{Example.} Converting the NFA $N$ to a DFA $M$ using the procedure presented above.
+    \begin{enumerate}[Step 1.]
+        \item Begin with the start state $S_0 \coloneqq \{q_0\}$.
+        \item Find all the states that can be reached from $S_0$ for each letter in $\Sigma$. $\delta'(S_0,0) = \underbrace{\{q_0, q_1\}}_{\text{\textcolor{red}{New state!}}}$, $\delta'(S_0,1) = \{q_0\}$
+    \end{enumerate}
     \begin{center}
         \begin{tikzpicture}[scale=0.2]
             \tikzstyle{every node}+=[inner sep=0pt]
             \draw [black] (19.1,-20.9) circle (3);
             \draw (19.1,-20.9) node {$q_0$};
             \draw [black] (30.8,-21.1) circle (3);
-            \draw (30.8,-21.1) node {$q1$};
+            \draw (30.8,-21.1) node {$q_1$};
             \draw [black] (42.1,-21.1) circle (3);
-            \draw (42.1,-21.1) node {$q2$};
+            \draw (42.1,-21.1) node {$q_2$};
+            \draw [black] (42.1,-21.1) circle (2.4);
+            \draw [black] (10.3,-20.9) -- (16.1,-20.9);
+            \fill [black] (16.1,-20.9) -- (15.3,-20.4) -- (15.3,-21.4);
+            \draw [black] (17.777,-18.22) arc (234:-54:2.25);
+            \draw (19.1,-13.65) node [above] {$0,1$};
+            \fill [black] (20.42,-18.22) -- (21.3,-17.87) -- (20.49,-17.28);
+            \draw [black] (22.1,-20.95) -- (27.8,-21.05);
+            \fill [black] (27.8,-21.05) -- (27.01,-20.54) -- (26.99,-21.53);
+            \draw (24.94,-21.52) node [below] {$0$};
+            \draw [black] (33.8,-21.1) -- (39.1,-21.1);
+            \fill [black] (39.1,-21.1) -- (38.3,-20.6) -- (38.3,-21.6);
+            \draw (36.45,-21.6) node [below] {$1$};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Example}
+    \begin{enumerate}[Step 3.]
+        \item Repeat Step 2 on every new state that is generated. Repeat until no new states are produced. This is shown in the table below.
+    \end{enumerate}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.2]
+            \tikzstyle{every node}+=[inner sep=0pt]
+            \draw [black] (19.1,-20.9) circle (3);
+            \draw (19.1,-20.9) node {$q_0$};
+            \draw [black] (30.8,-21.1) circle (3);
+            \draw (30.8,-21.1) node {$q_1$};
+            \draw [black] (42.1,-21.1) circle (3);
+            \draw (42.1,-21.1) node {$q_2$};
             \draw [black] (42.1,-21.1) circle (2.4);
             \draw [black] (10.3,-20.9) -- (16.1,-20.9);
             \fill [black] (16.1,-20.9) -- (15.3,-20.4) -- (15.3,-21.4);
@@ -494,40 +535,38 @@
         \end{tikzpicture}
     \end{center}
     \begin{table}[]
-        \begin{tabular}{|r|r|r|ll}
-            \cline{1-3}
-                                & 0          & 1          &  & \\ \cline{1-3}
-            $\rightarrow$\{q0\} & \{q0, q1\} & \{q0\}     &  & \\ \cline{1-3}
-            \{q0, q1\}          & \{q0, q1\} & \{q0, q2\} &  & \\ \cline{1-3}
-            *\{q0, q2\}         & \{q0, q1\} & \{q0\}     &  & \\ \cline{1-3}
+        \begin{tabular}{|c|cc|}
+            \hline
+            States $S$     & $\underset{p \in S}\bigcup\delta(p,0)$ & $\underset{p \in S}\bigcup\delta(p,1)$ \\ \hline
+            $\{q_0\}$      & $\{q_0, q_1\}$                         & $\{q_0\}$                              \\ \hline
+            $\{q_0, q_1\}$ & $\{q_0, q_1\}$                         & $\{q_0, q_2\}$                         \\ \hline
+            $\{q_0, q_2\}$ & $\{q_0, q_1\}$                         & $\{q_0\}$                              \\ \hline
         \end{tabular}
     \end{table}
 \end{frame}
 
 \begin{frame}{Example}
-    \textbf{Example.}
-    \begin{itemize}
-        \item 4) Step 4: Draw the DFA
-
-    \end{itemize}
+    \begin{enumerate}[Step 4.]
+        \item Build the DFA.
+    \end{enumerate}
     \begin{table}[]
-        \begin{tabular}{|r|r|r|ll}
-            \cline{1-3}
-                                & 0          & 1          &  & \\ \cline{1-3}
-            $\rightarrow$\{q0\} & \{q0, q1\} & \{q0\}     &  & \\ \cline{1-3}
-            \{q0, q1\}          & \{q0, q1\} & \{q0, q2\} &  & \\ \cline{1-3}
-            *\{q0, q2\}         & \{q0, q1\} & \{q0\}     &  & \\ \cline{1-3}
+        \begin{tabular}{|c|cc|}
+            \hline
+            States $S$     & $\delta'(S, 0)$ & $\delta'(S, 1)$ \\ \hline
+            $\{q_0\}$      & $\{q_0, q_1\}$  & $\{q_0\}$       \\ \hline
+            $\{q_0, q_1\}$ & $\{q_0, q_1\}$  & $\{q_0, q_2\}$  \\ \hline
+            $\{q_0, q_2\}$ & $\{q_0, q_1\}$  & $\{q_0\}$       \\ \hline
         \end{tabular}
     \end{table}
     \begin{center}
-        \begin{tikzpicture}[scale=0.2]
+        \begin{tikzpicture}[scale=0.25]
             \tikzstyle{every node}+=[inner sep=0pt]
             \draw [black] (18.9,-21.1) circle (3);
-            \draw (18.9,-21.1) node {$\{q0\}$};
+            \draw (18.9,-21.1) node {$\{q_0\}$};
             \draw [black] (31.5,-21.1) circle (3);
-            \draw (31.5,-21.1) node {$\{q0,q1\}$};
+            \draw (31.5,-21.1) node {$\{q_0,q_1\}$};
             \draw [black] (43.4,-21.1) circle (3.4);
-            \draw (43.4,-21.1) node {$\{q0,q2\}$};
+            \draw (43.4,-21.1) node {$\{q_0,q_2\}$};
             \draw [black] (43.4,-21.1) circle (3);
             \draw [black] (10.1,-21.1) -- (15.9,-21.1);
             \fill [black] (15.9,-21.1) -- (15.1,-20.6) -- (15.1,-21.6);
@@ -553,14 +592,46 @@
     \end{center}
 \end{frame}
 
+\begin{frame}{Exercise}
+    \textbf{Exercise.} Convert the following NFA $N$ into an equivalent DFA $M$. Your conversion should ensure that $L(N) = L(M)$. $\Sigma = \{a, b\}$.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.2]
+        \tikzstyle{every node}+=[inner sep=0pt]
+        \draw [black] (25.5,-27.6) circle (3);
+        \draw (25.5,-27.6) node {$q_0$};
+        \draw [black] (37.9,-27.6) circle (3);
+        \draw (37.9,-27.6) node {$q_1$};
+        \draw [black] (50.8,-27.6) circle (3);
+        \draw (50.8,-27.6) node {$q_2$};
+        \draw [black] (50.8,-27.6) circle (2.4);
+        \draw [black] (28.5,-27.6) -- (34.9,-27.6);
+        \fill [black] (34.9,-27.6) -- (34.1,-27.1) -- (34.1,-28.1);
+        \draw (31.7,-28.1) node [below] {$a$};
+        \draw [black] (19.4,-27.6) -- (22.5,-27.6);
+        \fill [black] (22.5,-27.6) -- (21.7,-27.1) -- (21.7,-28.1);
+        \draw [black] (36.577,-24.92) arc (234:-54:2.25);
+        \draw (37.9,-20.35) node [above] {$a,\mbox{ }b$};
+        \fill [black] (39.22,-24.92) -- (40.1,-24.57) -- (39.29,-23.98);
+        \draw [black] (40.9,-27.6) -- (47.8,-27.6);
+        \fill [black] (47.8,-27.6) -- (47,-27.1) -- (47,-28.1);
+        \draw (44.35,-28.1) node [below] {$b$};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
 \begin{frame}{Theorem}
-    \textbf{Theorem. }The set of all languages accepted by NFAs is the same as the set of all languages accepted by DFAs.\\
+    \textbf{Theorem.} The set of all languages accepted by NFAs is the same as the set of all languages accepted by DFAs.\\
     Why?
-    \begin{itemize}
-        \item 1. Every DFA is an NFA.
-        \item 2. Every NFA can be converted into a DFA.
-    \end{itemize}
-    \textbf{Corollary. }A language is regular if there is an FA (either DFA or NFA) that accepts it.
+    \begin{enumerate}[1.]
+        \item Every DFA is an NFA.
+        \item Every NFA can be converted into a DFA.
+    \end{enumerate}
+    \textbf{Corollary.} A language is regular if and only if there is an FA (either a DFA or NFA) that accepts it.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.}  Prove that the language $\{xwx : x \in \{0, 1\}, w \in \{0, 1\}^*\}$ is regular.
+
 \end{frame}
 
 

@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/minimal_dfa
 lesson_name: Minimal DFA
-order: 7
+order: 8
 ---
 
 <!-- This section is to be redone, with a proof of correctness video -->
