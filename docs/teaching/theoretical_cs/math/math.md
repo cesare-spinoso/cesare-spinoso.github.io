@@ -1,6 +1,5 @@
 ---
 layout: lesson_page
-title: Math Preliminaries
 permalink: /teaching/theoretical_cs/math
 lesson_name: Math Preliminaries
 order: 1
