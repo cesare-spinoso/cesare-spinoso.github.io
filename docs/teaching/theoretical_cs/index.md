@@ -1,9 +1,9 @@
 ---
 layout: page
+title: Theoretical CS
 permalink: /teaching/theoretical_cs
+order: 3
 ---
-
-<h2>Theoretical Computer Science</h2>
 
 Welcome to this Theoretical Computer Science resource page!
 

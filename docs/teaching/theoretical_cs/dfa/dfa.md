@@ -56,6 +56,3 @@ We know DFAs as language acceptors or recognizers. In fact, languages that can a
 
 {% include_relative exercise_non15.html %}
 
-<!-- Add this to the closure property section -->
-
-{% include_relative exercise_adiffb.html %}

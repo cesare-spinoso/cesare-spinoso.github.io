@@ -1,0 +1,106 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+
+% For removing Figure 1 in figures
+\usepackage{caption}
+
+% For enumeration as words
+\usepackage{blindtext}
+\usepackage{enumerate}
+\usepackage{geometry}
+
+\usepackage{tikz}
+\usepackage{xspace}
+
+
+\title{Theory of Computation}
+\subtitle{Tutorial - Closure Properties of Regular Languages}
+\author{Cesare Spinoso-Di Piano}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Plan for today}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Closure properties of regular languages}
+\begin{frame}{Regular languages}
+    \underline{Recall}
+
+    \textbf{Definition.} A language $L$ is regular if there exists a DFA $M$ that accepts $L$ i.e. such that $L = L(M)$.
+
+    \textbf{Theorem.} The set of languages accepted by NFAs is exactly the same as the set of languages accepted by DFAs.
+
+    \textbf{Corollary.} A language $L$ is regular if there exists an FA $M$ that accepts it.
+
+    If a language $L$ is regular and we apply some language operator to it, does this new language remain regular? If we know that languages $L_1, L_2$ are regular, can we conclude anything about operations on these languages (i.e. are they regular or not)?
+
+\end{frame}
+
+\begin{frame}{Closure properties of regular language}
+    \textbf{Definition.} If for any regular languages $L_1, L_2$, $L_1 \Theta L_2$ is regular then we say regular languages are ``closed under $\Theta$ operation''.
+
+    \textbf{Theorem.} For any regular languages $L_1, L_2$ we have the following results:\begin{itemize}
+        \item $L_1 \cup L_2$ is regular.
+        \item $L_1 \cdot L_2$ is regular.
+        \item $L_1^*$ is regular.
+        \item $\overline{L_1}$ is regular.
+    \end{itemize}
+
+    Fun exercise: Thinking of operations on languages and proving (or disproving) that they are regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Let $L$ be a regular language. Prove that $L^R$ is regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Let $L$ be a regular language and let $\Sigma=\{a,b\}$. Prove that \texttt{prefix}$(L)$ is regular where \texttt{prefix}$(L) = \{x \in \Sigma^* : \exists y \in \Sigma^*, xy \in L\}$.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Let $L_1, L_2$ be two regular languages over $\Sigma=\{a, b\}$. Prove that \texttt{shuffle}$(L_1, L_2)$ is regular where \texttt{shuffle}$(L_1, L_2) = \{x_1y_1x_2y_2 \dots x_ky_k : x_1x_2\dots x_k \in L_1, y_1y_2\dots y_k \in L_2, x_i, y_i \in \Sigma\}$.
+\end{frame}
+
+\begin{frame}{Using closure properties to prove that a language is regular}
+    \underline{How can we prove a language $L$ is regular?}
+    \begin{enumerate}
+        \item Show that $L$ is accepted by some FA $M$. But what if $L$ is made up of many pieces?
+        \item Identify the sub-languages and language operations ($\cup, \cdot, {L}^*, \overline{L}$) that make up $L$ and then use closure properties to prove $L$ is regular.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Let $L_1, L_2$ be two regular languages. Prove that $L_1 \cap L_2$ is regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Given $L_1 = \{ab^na: n > 0\}$, $L_2 = \{ba, bba\}$, $L_3 = \{aw : w \in \{a,b\}^* \}$. Is $L_1 \cdot L_2 \cup L_3$ regular?
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Is the language $L = \{a^nb^n: n < 42\}$ regular, why/why not? Give some intuition.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} If $L$ is a regular language, show that language \texttt{append1}$(L) = \{ x1 : x \in L \}$ is also regular. ($\Sigma = \{0,1\}$.)
+\end{frame}
+
+\begin{frame}{Exercise}
+    \underline{Prove or disprove the following statements.}
+    \begin{enumerate}
+        \item If $L_1L_2$ is regular and $L_1$ is finite, then $L_2$ is regular.
+        \item If $L^R$ is regular, then $\overline{L}$ is regular.
+        \item There are no two NON-regular languages $L_1,L_2$ such that $L_1 \cup L_2$ is regular.
+    \end{enumerate}
+\end{frame}
+
+\end{document}
