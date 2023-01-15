@@ -11,9 +11,13 @@ This section will be about minimal DFAs. You will see what it means for a DFA to
 
 <h4>Minimal DFAs and the minimization algorithm</h4>
 
-A DFA is minimal in the sense that no other DFA with a smaller **number of states** exists that accepts the same language. Every regular language has a minimal DFA! This can be shown by construction. First, we create an algorithm that minimizes any DFA. If we can prove that this algorithm is correct, then clearly a minimal DFA exists for every regular language: simply create *any* DFA that accepts it and then reduce it with this algorithm.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h5VL6FuXS58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+A DFA is minimal in the sense that no other DFA with a smaller **number of states** exists that accepts the same language. Every regular language has at least one minimal DFA! This can be shown by construction. First, we create an algorithm that minimizes any DFA. If we can prove that this algorithm is correct, then clearly a minimal DFA exists for every regular language: simply create *any* DFA that accepts it and then reduce it with this algorithm.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C4K1o8cWfc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+We will see that, thanks to the Myhill-Nerode Theorem, any minimal DFA produced by the state reduction algorithm will be unique (up to relabeling the states).
 
 <h4>Using the algorithm</h4>
 
@@ -27,6 +31,6 @@ Are you confused? I don't blame you! I was confused the first time I saw the min
 
 {% include_relative exercise_6states.html %}
 
-<!-- Include exercise about minimal NFA -->
+{% include_relative exercise_minimal_nfa.html %}
 
 <!-- Include T/F about minimality and identify of languages -->
