@@ -1,0 +1,134 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+
+% For removing Figure 1 in figures
+\usepackage{caption}
+
+% For enumeration as words
+\usepackage{blindtext}
+\usepackage{enumerate}
+\usepackage{geometry}
+
+\usepackage{tikz}
+\usepackage{xspace}
+
+
+\title{Theory of Computation}
+\subtitle{Tutorial - The Pumping Lemma (for Regular Languages)}
+\author{Cesare Spinoso-Di Piano}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Plan for today}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+\section{Non-regular languages}
+
+\begin{frame}{What is a ``non-regular'' language?}
+
+\end{frame}
+
+\section{The Pumping Lemma}
+
+\begin{frame}{The Pumping Lemma}
+
+    \textbf{Lemma.} Let $L$ be an infinite regular language. Then there exists some positive integer $m$ such that any $w \in L$ with $|w| \geq m$ can be decomposed a $w = xyz$ with $|xy| \leq m$, and
+    $|y| \geq 1$ such that $w_i = x{y^i}z$ is also in $L$ for all $i = 0, 1, 2, \dots$.
+
+\end{frame}
+
+\begin{frame}{Breaking Down the PL}
+    % \begin{align*}
+    %      & L \text{ regular }                       \\
+    %      & \implies                                 \\
+    %      & \exists m > 0                            \\
+    %      & \forall w \in L, |w| \geq m              \\
+    %      & \exists w = xyz, |xy| \leq m, |y| \geq 1 \\
+    %      & \forall i \geq 0, xy^iz \in L
+    % \end{align*}
+\end{frame}
+
+\section{Using the PL}
+
+\begin{frame}{Using the PL}
+    \textbf{Idea.} If $L$ regular then $L$ satisfies the conditions of the PL $\equiv$ If $L$ does not satisfy the conditions of the PL then $L$ is \textit{not} regular.
+
+    What is the negation of the conditions of the PL ?
+\end{frame}
+
+\begin{frame}{Using the PL}
+    Imagine a game where \textit{you} play against some \textit{opponent}. The point of the game is to win, i.e. to fool your opponent. The game follows the following 4 moves.
+
+    \begin{enumerate}[Move 1.]
+        \item \textbf{Opponent's move.} Chooses an $m > 0$. You have no knowledge of what this $m$ could be.
+        \item \textbf{Your move.} Pick a \textit{particular} string $w$ with $|w| \geq m$.
+        \item \textbf{Opponent's move.} They decompose your string into $xyz$ where $|xy| \leq m$, $|y| > 0$. There are many possible decompositions, you don't know which one your opponent picked.
+        \item \textbf{Your move.} You pick a \textit{particular} $i \geq 0$ and show that $xy^iz \notin L$. You have defeated your opponent!
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Prove that $L=\{{0^n}1^j, n>j \geq 0\}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Prove that $L = \{a^n : n = k^3\}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Is the language $L=\{a^nb^l:n/l\in Z\}$ regular? Prove your claim.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Is the language $L=\{w \in \{a,b\}^* : n_a(w) + n_b(w) = 4n_b(w) \}$ regular? Prove your claim.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Is the language $L = \{a^{2n} : n \geq 0\} \cup \{a^{2^n} : n \geq 0 \}$ regular? Prove your claim.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Let $L = \{a^nb^kc^{n+k}d^p : n,k,p \geq 0\}$ be a language we are trying to show is not regular using the pumping lemma. Suppose your opponent chooses an integer $m > 0$. Which of the following strings for $w$ would be a suitable choice to show that $L$ is not regular? Should you pump up or pump down?
+    \begin{itemize}
+        \item[a.] $w = a^mb^mc^m$
+        \item[b.] $w = a^mb^m$
+        \item[c.] $w = a^mc^m$
+        \item[d.] $w = a^mb^{2m}c^md^m$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Show that you cannot use the pumping lemma to prove that $L = \{a^ib^jc^k : i = 0 \implies j = k\}$ is not regular.
+\end{frame}
+
+\section{Using the closure properties (again)}
+
+\begin{frame}{Using the closure properties}
+    \textbf{Idea.} If you are trying to show that $L$ is not regular, assume (for contradiction) that it is regular. Now ``manipulate'' $L$ using the closure properties to conclude that another language $L'$ is regular \textit{when you know that this is not the case}.
+
+    \textbf{Example.} Consider the language $L = \{ w \in \{a, b\}^* : n_a(w) = n_b(w) \}$. We claim this language is not regular. Suppose (for contradiction) that it is regular. Then, $L' = L \cap L(a^*b^*)$ must be regular by the closure properties. But this would mean that $L' = \{a^nb^n : n \geq 0\}$ is regular, a contradiction.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Prove that $L=\{w\in \Sigma ^*: w$ has more $0's$ than $1's \}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Use the closure properties of regular languages to prove that $L=\{{a^n}b^n: n\geq 335\}$ is not regular.
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Is the language $L = \{w_1cw_2 : w_1,w_2 \in \{a,b\}^*, w_1 \neq w_2\}$ regular? Prove your answer.
+\end{frame}
+
+\end{document}
