@@ -1,0 +1,24 @@
+<div id="question_7">
+    <b>Exercise.</b> Show that you cannot use the pumping lemma to prove that \(L = \{a^ib^jc^k : i = 0 \implies j = k\}\) is not regular.
+
+</div>
+<button onclick="HideShowElement('answer_7')">Show/Hide Answer</button>
+<div id="answer_7" style="display: none;">
+    <p>
+        The idea here is to show that \(L\) does in fact satisfy the conditions of the PL. 
+        Recall what the PL says
+            $$\exists m > 0 . \forall w \in L, |w| \geq m . \exists w = xyz, |xy| \leq m, |y| \geq 1 . \forall i \geq 0, xy^iz \in L$$ 
+    </p>
+    <p>
+        We fix some \(m > 0\). Now we must consider all possible strings \(w \in L\) with length greater or equal to \(m\). We break this up into cases which will be based off the number of \(a\)'s in \(w\).
+    </p>
+    <p>
+        We have the following cases:
+        <ol>
+            <li>\(w\) has no \(a\)'s. In this case, \(w\) has the form \(b^jc^k\) where \(j + k \geq m\). If \(j \geq 1\), we select \(y = b\). Then for any pump of this string \(xy^iz\) will clearly still be in \(L\). If \(j = 0\), then set \(y = c\). Any pump of this string will again remain in \(L\).</li>
+            <li>\(w = ab^nc^n, 2n + 1 \geq m\). We can pick \(y = a\) and we will have \(xy^iz \in L, \forall i\). This is the key: to notice that if \(i = 1\) implies the number of \(b\)'s and \(c\)'s must be equal but nothing says that the number of \(b\)'s and \(c\)'s can't be equal <i>even if</i> \(i \neq 1\).</li>
+            <li>\(w\) has more than 1 \(a\). In this case, we need to be more careful. We mustn't pick a \(y\) that, when pumped down, will create the string \(xy^iz = a b^j c^k, j \neq k \). To do so, we set \(y\) to the entire sequence of \(a\)'s if there are \(m\) of fewer \(a\)'s in \(w\). Otherwise, we set it to \(a^{m-1}\) (so that the gap is of at least 2 \(a\)'s).</li>
+        </ol>
+    </p>
+    <p>This shows that \(L\) satisfies the conditions of the PL. Therefore, even though we know it isn't regular (use the closure properties!), we cannot prove this with the pumping lemma. We will see that the Myhill-Nerode theorem can help us with this limitation.</p>
+</div>
