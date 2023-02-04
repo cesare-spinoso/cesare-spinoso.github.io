@@ -22,3 +22,5 @@ Much like sets, languages also have associated operations. I discuss some of the
 <h4>Exercises</h4>
 
 {% include_relative exercise1.html %}
+
+{% include_relative exercise2.html %}
