@@ -6,3 +6,7 @@ order: 16
 ---
 
 <!-- Examples of closure properties CFLs, DCFLs  -->
+
+```
+Content on the way! >^_^<
+```

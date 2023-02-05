@@ -6,3 +6,7 @@ order: 13
 ---
 
 <!-- CYK algorithm, example -->
+
+```
+Content on the way! >^_^<
+```

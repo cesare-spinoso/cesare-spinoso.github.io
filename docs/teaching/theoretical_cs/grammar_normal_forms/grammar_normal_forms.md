@@ -6,3 +6,7 @@ order: 12
 ---
 
 <!-- CFG simplification, CFG CNF -->
+
+```
+Content on the way! >^_^<
+```
