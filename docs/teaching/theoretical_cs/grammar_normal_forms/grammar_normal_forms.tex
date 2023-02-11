@@ -1,0 +1,237 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+
+\usepackage{caption}
+
+% For enumeration as words
+\usepackage{blindtext}
+\usepackage{enumerate}
+\usepackage{geometry}
+
+\usepackage{tikz}
+\usepackage{xspace}
+
+
+\title{Theory of Computation}
+\subtitle{Tutorial - Normal Forms}
+\author{Cesare Spinoso-Di Piano}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Plan for today}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Production simplification}
+
+\begin{frame}{$\lambda$-productions and nullable variables}
+    \textbf{Definition.} A \textbf{$\lambda$-production} is any production of the form
+    \begin{align*}
+        A & \rightarrow \lambda
+    \end{align*}
+    \textbf{Definition.} A nullable variable is any variable such that
+    \begin{align*}
+        A & \Rightarrow ^* \lambda
+    \end{align*}
+
+\end{frame}
+
+\begin{frame}{Removing $\lambda$-productions and nullable variables}
+    Let $G = (V,T,S,P)$ be any CFG such that $\lambda \notin L(G)$. Then we can always convert $G$ to an equivalent grammar $G' = (V',T',S',P')$ with no  $\lambda$-productions or nullable variables.
+    \begin{enumerate}[1.]
+        \item Identify all nullable variables $V_N$.
+        \item For each production $P$ in $G$
+              \begin{align*}
+                  A \rightarrow x_1x_2\dots x_m, x_i \in T \cup V
+              \end{align*}
+              put $P$ in $G'$.
+        \item Add to $G'$ every possible production resulting from replacing some nullable variable $x_j$ by $\lambda$ (except for $A \rightarrow \lambda$).
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Example}
+    \textbf{Example.} Suppose $G$ has the following productions
+    \begin{align*}
+        S & \rightarrow aABC        \\
+        A & \rightarrow \lambda|BC  \\
+        B & \rightarrow bb|C        \\
+        C & \rightarrow \lambda | c
+    \end{align*}
+    The nullable variables are $A,B,C$. The simplified grammar is
+    \begin{align*}
+        S & \rightarrow aABC | aAB | aBC | aAC | aA | aB | aC | a \\
+        A & \rightarrow BC | B | C                                \\
+        B & \rightarrow bb | C                                    \\
+        C & \rightarrow c
+    \end{align*}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Eliminate all $\lambda-$productions from
+    \begin{align*}
+        S & \rightarrow AaB | aaB     \\
+        A & \rightarrow \lambda       \\
+        B & \rightarrow bbA | \lambda
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Unit production and removing them}
+    \textbf{Definition.} Any production of the form $A \rightarrow B$ from a grammar $G = (V,T,S,P)$ where $A,B \in V$ is a \textbf{unit-production}.\\\bigskip
+    Given a grammar $G = (V,T,S,P)$ with unit-productions convert it to an equivalent grammar $G' = (V', T', S', P')$ without any unit-productions as follows:
+    \begin{enumerate}[1.]
+        \item Remove any productions $A \rightarrow A$.
+        \item Find all variables $A, B \in V$ such that $A \Rightarrow^* B$.
+        \item Put all the non-unit productions in $P'$
+        \item For every pair $A, B$ identified in step 1., if $B \rightarrow x_1 | ... | x_n$ are productions in \textbf{$P'$}, then add $A \rightarrow x_1 | ... | x_n$ to $P'$.
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Example}
+    \textbf{Example.} Suppose the following productions rules are found in $G$
+    \begin{align*}
+        S & \rightarrow A | bBb | C  \\
+        A & \rightarrow a | bC | C   \\
+        B & \rightarrow b            \\
+        C & \rightarrow abA | CC | B \\
+    \end{align*}
+    Removing all unit-productions and adding productions accordingly gives the following grammar
+    \begin{align*}
+        S & \rightarrow bBb | a | bC | abA | CC | b \\
+        A & \rightarrow a | bC | abA | CC | b       \\
+        B & \rightarrow b                           \\
+        C & \rightarrow abA | CC | b
+    \end{align*}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Eliminate all unit-productions from
+    \begin{align*}
+        S & \rightarrow a| aA | B | C \\
+        A & \rightarrow aB | \lambda  \\
+        B & \rightarrow Aa            \\
+        C & \rightarrow cCD           \\
+        D & \rightarrow ddd| Cd
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Removing useless variables}
+    \textbf{Definition.} Given a grammar $G = (V, T, S, P)$, a variable $A \in V$ is \textbf{useful} if it appears in derivation of at least one string $w$ in $L(G)$. Otherwise, the variable is \textbf{useless} (either unreachable or non-generating).
+
+    \textbf{Definition.} A production $x \rightarrow y$ is \textbf{useless} if it contains any useless variable.
+
+    \textbf{Theorem.} Removing useless productions from $G$ produces an equivalent grammar $G'$.
+
+\end{frame}
+
+\begin{frame}{Example}
+    \textbf{Example.} Suppose the grammar $G$ has the following productions:
+    \begin{align*}
+        S & \rightarrow A | C        \\
+        A & \rightarrow aA | \lambda \\
+        B & \rightarrow bA           \\
+        C & \rightarrow aCA
+    \end{align*}
+    Notice that $B$ (unreachable) and $C$ (non-generating) are useless variables, so we can remove all productions containing them and get the following grammar
+    \begin{align*}
+        S & \rightarrow A            \\
+        A & \rightarrow aA | \lambda \\
+    \end{align*}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Eliminate all useless productions from
+    \begin{align*}
+        S & \rightarrow a| aA | B | C \\
+        A & \rightarrow aB | \lambda  \\
+        B & \rightarrow Aa            \\
+        C & \rightarrow cCD           \\
+        D & \rightarrow ddd| Cd
+    \end{align*}
+\end{frame}
+
+
+\begin{frame}{Grammar simplification}
+    To clean up a grammar follow the steps shown above in this order:
+    \begin{enumerate}
+        \item Remove nullable variables and $\lambda$-productions
+        \item Remove unit productions
+        \item Remove useless productions
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Simplify the following grammar $G = (\{S,A,B,C,D\}, \{a,b\}, S, P) $ with $P$
+    \begin{align*}
+        S & \rightarrow aaA | aBB | DaB \\
+        A & \rightarrow AaA | \lambda   \\
+        B & \rightarrow bB | D          \\
+        C & \rightarrow B               \\
+        D & \rightarrow \lambda | bDa
+    \end{align*}
+\end{frame}
+
+\section{Normal forms}
+
+\begin{frame}{Chomsky normal form}
+    \textbf{Definition.} A context-free grammar $G = (V,T,S,P)$ is in \textbf{chomsky normal form} if all of its productions are of the from
+    \begin{align*}
+        A & \rightarrow BC & \text{ OR } \\
+        A & \rightarrow a
+    \end{align*}
+    Where $A,B,C \in V$ and $a \in T$.\\
+    \textbf{Example.} The following grammar $G = (V,T,S,P)$ is NOT in CNF
+    \begin{align*}
+        S & \rightarrow BC | A    \\
+        A & \rightarrow aa | aAAB
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Conversion to CNF}
+    \textbf{Theorem.} Any CFG $G$ (where $\lambda \notin L(G)$) can be converted to CNF.\\
+    To convert a grammar $G = (V,T,S,P)$ that is not in CNF to an equivalent grammar $G' = (V',T',S',P')$ in CNF:
+    \begin{enumerate}
+        \item Simplify $G$. Add production rules to $P'$.
+        \item For every terminal $x \in T$, create a rule $T_x \rightarrow x$. Add to $P'$.  If the only problem is having productions with
+              more than 2 variables on the right, skip this step.
+        \item For any production $A \rightarrow C_1C_2 \dots C_n$ convert it to the following $n-1$ production rules and add them to $P'$.
+              \begin{align*}
+                  A       & \rightarrow C_1V_1     \\
+                  V_1     & \rightarrow C_2V_2     \\
+                          & \dots                  \\
+                  V_{n-2} & \rightarrow C_{n-1}C_n
+              \end{align*}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Exercise}
+    \textbf{Exercise.} Convert the following grammar to CNF
+    \begin{align*}
+        S & \rightarrow bS | Aa | A | C \\
+        A & \rightarrow aab | \lambda   \\
+        B & \rightarrow AcBB
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Greibach normal form}
+    \textbf{Definition.} A context-free grammar $G = (V,T,S,P)$ is said to be in Greibach normal form if all productions have the form
+    \begin{align*}
+        A \rightarrow ax
+    \end{align*}
+    where $a \in T, x \in V^*$.\\
+    \textbf{Example.} The following grammar is NOT in GNF
+    \begin{align*}
+        S \rightarrow abSbS|aaS|a
+    \end{align*}
+    \textbf{Theorem.} Every CFG $G$ ($\lambda \notin L(G)$) can be converted into an equivalent grammar $G'$ in GNF.\\
+\end{frame}
+
+\end{document}
