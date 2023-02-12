@@ -5,8 +5,10 @@ lesson_name: Pushdown Automata (PDA)
 order: 14
 ---
 
-<!-- Definition of PDAs, Examples, Equivalence between PDAs and CFGs,  -->
+<!-- Definition of PDAs, Examples  -->
+
+Slides for this section can be found [here](pushdown_automata.pdf).
 
 ```
-Content on the way! >^_^<
+More content on the way! //0‑0\\
 ```
