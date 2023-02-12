@@ -1,11 +1,11 @@
 ---
 layout: lesson_page
 permalink: /teaching/theoretical_cs/nfa
-lesson_name: Non-Deterministic Finite Automata (NFA)
+lesson_name: Nondeterministic Finite Automata (NFA)
 order: 4
 ---
 
-This section will be about Non-Deterministic Finite Automata (NFA) and their connection to DFAs. You will see what an NFA is, how to walk through the computation of an NFA, and how NFAs and DFAs are related. You can find the notes related to this section [here](nfa.pdf).
+This section will be about Nondeterministic Finite Automata (NFA) and their connection to DFAs. You will see what an NFA is, how to walk through the computation of an NFA, and how NFAs and DFAs are related. You can find the notes related to this section [here](nfa.pdf).
 
 <h4>What's an NFA?</h4>
 
@@ -22,13 +22,13 @@ Ok so now you that you have an idea of *what* an NFA is, we'll next see *how* an
 
 <h4>Building NFAs to accept languages</h4>
 
-We've looked at many examples and exercises where we create a DFA that accepts a given language. We can of course use some of the same ideas for building NFAs. In addition, however, we can also use the convenience of non-determinism to create much more compact and elegant machines.
+We've looked at many examples and exercises where we create a DFA that accepts a given language. We can of course use some of the same ideas for building NFAs. In addition, however, we can also use the convenience of nondeterminism to create much more compact and elegant machines.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j__g34aJ0gA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h4>NFAs and DFAs</h4>
 
-At this point, you might be thinking "Woah NFAs are pretty cool and this non-determinism thing makes writing machines a lot easier!". Some of you might even think that NFAs are more *powerful* that DFAs. That is, that NFAs can accept more languages than DFAs. In fact, although very convenient, NFAs and DFAs accept __exactly__ the same set of languages! This has some important implications on regular languages. Namely, if DFAs and NFAs accept the same family of languages, then to prove that a language is regular we can either create a DFA **or** an NFA that accepts it. This surprised me at first because it really seemed like NFAs were doing something "more" than DFAs, but like the next video will show you that is simply not true!
+At this point, you might be thinking "Woah NFAs are pretty cool and this nondeterminism thing makes writing machines a lot easier!". Some of you might even think that NFAs are more *powerful* that DFAs. That is, that NFAs can accept more languages than DFAs. In fact, although very convenient, NFAs and DFAs accept __exactly__ the same set of languages! This has some important implications on regular languages. Namely, if DFAs and NFAs accept the same family of languages, then to prove that a language is regular we can either create a DFA **or** an NFA that accepts it. This surprised me at first because it really seemed like NFAs were doing something "more" than DFAs, but like the next video will show you that is simply not true!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2LlBXMICatA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

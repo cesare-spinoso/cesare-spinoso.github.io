@@ -1,7 +1,7 @@
 ---
 layout: lesson_page
 permalink: /teaching/theoretical_cs/context_free_grammars
-lesson_name: Context-Free Grammars and Languages
+lesson_name: Context-Free Grammars (CFGs) and Context-Free Languages (CFLs)
 order: 11
 ---
 
