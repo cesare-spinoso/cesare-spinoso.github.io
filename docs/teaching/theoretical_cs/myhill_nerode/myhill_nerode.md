@@ -58,3 +58,7 @@ Using the M-N theorem to prove non-regularity when the pumping lemma can't is a 
 {% include_relative exercise_provereg.html %}
 
 {% include_relative exercise_eqalgo.html %}
+
+<!-- TODO: Add the question about english not being grammatical
+using M-N with the set S ={(the noun)^n verb} and the property
+that only (the noun)^n verb^n is grammatical in english -->
