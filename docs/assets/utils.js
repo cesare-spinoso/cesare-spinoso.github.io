@@ -34,14 +34,11 @@ function changeTheme() {
 }
 
 // Check local storage every reload to know which theme to use.
-const theme_switch = document.getElementById("theme-switch");
 if (localStorage.getItem("my-theme") === "dark") {
     // Use dark theme.
     DarkReader.enable();
-    theme_switch.checked = true;
 }
 else {
     // Use default theme.
     DarkReader.disable();
-    theme_switch.checked = false;
 }
