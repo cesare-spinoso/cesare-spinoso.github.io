@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "My experience teaching"
+date:   2023-12-14 11:01:45 -0500
+---
+I am extremely lucky and grateful to have been able to teach one of my favourite topics (theoretical computer science) during the Fall 2023 term at McGill University. I met a countless number of brilliant undergrads who made the experience so much fun. I collected a few of my favourite moments [here]({{ "/teaching/comp330/fall2023" | relative_url }}).
