@@ -5,7 +5,7 @@ permalink: /research/
 order: 2
 ---
 
-I am interested in developing statistical as well as language-based computational methods to help scientists further their research. This interest began during my undergrad and has continued during my master's where I most recently developed language techniques to assist qualitative researchers in conducting qualitative analyses. Here is a list of my most recent publications.
+I am interested in developing statistical as well as language-based computational methods to help scientists further their research. This interest began during my undergrad and continued during my master's where I most recently developed language techniques to assist qualitative researchers in conducting qualitative analyses. Here is a list of my most recent publications.
 
 <h3>Qualitative Code Suggestion: A Human-Centric Approach to Qualitative Coding (2023)</h3>
 

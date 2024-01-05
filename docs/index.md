@@ -11,9 +11,9 @@ Hello and welcome to my website!
 
 ## About me
 <img style="float:left;width:auto;height:300px;margin:10px"  src="cspino.png"/>
-I'm currently a master's student at [McGill University](https://www.cs.mcgill.ca/) and [Mila](https://mila.quebec/en/) researching applications and extensions of natural language processing (NLP) to the field of medicine. I am supervised by [Prof. Jackie Cheung](https://www.cs.mcgill.ca/~jcheung/index.html) and [Prof. Samira Rahimi](https://rahimislab.ca/). We are currently working on ways of integrating recent advances in NLP to assist health researchers in their analysis of patient-care data.
+I'm a first-year PhD student at [McGill University](https://www.cs.mcgill.ca/) and [Mila](https://mila.quebec/en/) where I am advised by [Prof. Jackie Cheung](https://www.cs.mcgill.ca/~jcheung/index.html). I am (very broadly) interested in ways of using and developing NLP techniques to further scientific research.
 
-I was previously at [Concordia University](https://www.concordia.ca/) where I earned a Bachelor's degree in Mathematics, Statistics and Computer Science (Joint Major).
+Before starting my PhD, I earned a master's degree in Computer Science from [McGill University](https://www.cs.mcgill.ca/) where I worked with Prof. Cheung along with [Prof. Samira Rahimi](https://rahimislab.ca/) on leveraging NLP techniques to assist health researchers in their analysis of patient-care data. Before my master's, I earned a bachelor's degree in Mathematics, Statistics and Computer Science (Joint Major) from [Concordia University](https://www.concordia.ca/).
 
 <br>
 <br>
