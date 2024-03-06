@@ -7,6 +7,15 @@ order: 2
 
 I am interested in developing statistical as well as language-based computational methods to help scientists further their research. This interest began during my undergrad and continued during my master's where I most recently developed language techniques to assist qualitative researchers in conducting qualitative analyses. Here is a list of my most recent publications.
 
+<h3>Identifying and Analyzing Task-Encoding Tokens in Large Language Models (2024)</h3>
+Bai, Yu, Heyan Huang, <b>Cesare Spinoso-Di Piano</b>, Marc-Antoine Rondeau, Sanxing Chen, Yang Gao, and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2401.11323">Analyzing Task-Encoding Tokens in Large Language Models.</a> <i>arXiv:2401.11323 (2024).</i>
+
+<button onclick="HideShowElement('tek')">More details</button>
+<div id="tek" style="display: none;">
+
+This preprint was the result of a project led by the wonderful <a href="https://ybai-nlp.github.io/">Yu Bai</a> who worked to analyze the behaviour of large language models (LLMs) while performing in-context learning. We found that LLMs are quite sensitive to <i>task-encoding tokens</i> (e.g., tokens making up the prompt template) in terms of donwstream performance. For example, we observe that the performance of models drops to <b>0%</b> (yes, worse than random) when provided a prompt with input-output demonstrations but <i>no</i> template tokens.
+</div>
+
 <h3>Qualitative Code Suggestion: A Human-Centric Approach to Qualitative Coding (2023)</h3>
 
 <b>Cesare Spinoso-Di Piano</b>, Samira Rahimi, and Jackie Cheung. 2023. <a href="https://aclanthology.org/2023.findings-emnlp.993/">Qualitative Code Suggestion: A Human-Centric Approach to Qualitative Coding.</a> In <i>Findings of the Association for Computational Linguistics</i>: EMNLP 2023, pages 14887–14909, Singapore. Association for Computational Linguistics.
@@ -24,7 +33,7 @@ Ziling Cheng, Rahul Aralikatte, Ian Porada, <b>Cesare Spinoso-Di Piano</b>, and 
 <button onclick="HideShowElement('details_babylm')">More details</button>
 <div id="details_babylm" style="display: none;">
 
-This publication was the result of a project lead by the brilliant and tremendously hard-working Ziling Cheng in the context of the <a href="https://babylm.github.io/">BabyLM Challenge</a>. Through our experiments, we showed that more careful data preprocessing decisions can lead to performance increases of language models trained on very little amounts of data.
+This publication was the result of a project lead by the brilliant and tremendously hard-working <a href="https://scholar.google.com/citations?user=_2W8Ai4AAAAJ&hl=en">Ziling Cheng</a> in the context of the <a href="https://babylm.github.io/">BabyLM Challenge</a>. Through our experiments, we showed that more careful data preprocessing decisions can lead to performance increases of language models trained on very little amounts of data.
 </div>
 
 
