@@ -19,4 +19,4 @@ Before starting my PhD, I earned a master's degree in Computer Science from [McG
 
 <br>
 
-In terms of research duties, I am currently an organizer for the McGill NLP [reading group](https://mcgill-nlp.github.io/reading-group/) (really more of a seminar series). Before that, I was the organizer of the Mila Health and AI reading group (March 2022 to March 2023).
+In terms of research services, I am currently an organizer for the McGill NLP [reading group](https://mcgill-nlp.github.io/reading-group/) (really more of a seminar series). Before that, I was the organizer of the Mila Health and AI reading group (March 2022 to March 2023).
