@@ -9,12 +9,13 @@ I have had the pleasure to tutor students, TA and teach classes in different are
 
 ## Theoretical Computer Science
 
-I had the pleasure of serving as a TA and instructor for the theoretical computer science classes at both Concordia and McGill. I have developed a dedicated webpage for this material (still a work in progress) which you can find [here]( {{ "/teaching/theoretical_cs" | relative_url }}).
+I had the pleasure of serving as a TA and instructor for the theoretical computer science classes at both Concordia and McGill. I have developed a dedicated webpage for this material (still a work in progress) which you can find [here]( {{ "/teaching/theoretical_cs" | relative_url }}). I am hoping to add more sections by the end of Summer 2024 🤞.
 
 ### Theory of Computation (Comp 330)
+
 I was extremely lucky to teach the Theory of Computation class at McGill University (also known as Comp 330) during the Fall 2023 semester. I had an unbelievably good time and I hope my students did as well! I have collected a few of my favourite moments and have posted them [here]({{ "2023/12/14/teaching.html" | relative_url }}).
 
-In addition to teaching the course, I had the pleasure of serving as a TA for [Prof. Panangaden](https://www.cs.mcgill.ca/~prakash/) in the Fall 2022 term and [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html) in the Winter 2023 term. I held office hours, graded assignments and exams as well as *guest lectured for Prof. Panangaden* on the Myhill-Nerode theorem. I am excited to TA this class again in the Winter 2024 term.
+In addition to teaching the course, I had the pleasure of serving as a TA for [Prof. Panangaden](https://www.cs.mcgill.ca/~prakash/) in the Fall 2022 term and [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html) in the Winter 2023 and Winter 2024 term. I held office hours, graded assignments and exams as well as guest lectured for Prof. Panangaden on the Myhill-Nerode theorem. I am excited to TA this class again in the Fall 2024 term.
 
 ### Introduction to Theoretical Computer Science (Comp 335)
 

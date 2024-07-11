@@ -11,3 +11,6 @@ _site/
 *.synctex.gz
 *.snm
 *.nav
+
+# Ad-hoc
+adhoc/*
