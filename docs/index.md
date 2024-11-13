@@ -29,6 +29,8 @@ In terms of research services, I am currently an organizer for the McGill NLP [r
 
 ## Recent News
 
+- **November 2024**: I am at EMNLP 2024 to present my poster at the workshop on customizable NLP! Link to paper/github [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
+
 - **July 2024**: Better late than never! I have made a [webpage]({{ "teaching/comp330/fall2023" | relative_url }}) for the Comp 330 (Theory of Computation) class I taught in the Fall 2023. Resources like lecture notes and assignments are now publicly accessible! This compliments a [previous post]({{ "2023/12/14/my_experience_teaching.html" | relative_url }}) I made recounting my teaching experience.
 
 - **May 2024**: I gave a lecture on NLP to the 2024 cohort of [AI4Good](https://www.ai4goodlab.com/) students!
