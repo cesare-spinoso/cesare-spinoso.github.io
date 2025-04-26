@@ -5,4 +5,4 @@ permalink: /posts/
 order: 5
 ---
 
-My (ever growing) collection of blog posts can be found here ⌨️📝👨‍💻. 
+My (ever growing) collection of blog posts can be found here ⌨️📝👨‍💻.

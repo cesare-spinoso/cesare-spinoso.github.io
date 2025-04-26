@@ -5,10 +5,20 @@ permalink: /research/
 order: 2
 ---
 
-I am interested in developing statistical as well as language-based computational methods to help scientists further their research. This interest began during my undergrad and continued during my master's where I most recently developed language techniques to assist qualitative researchers in conducting qualitative analyses. Here is a list of my most recent publications.
+Here is a list of my most recent publications.
+
+<h3>Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts</h3>
+<b>Cesare Spinoso-Di Piano</b>, and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2411.06524">Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts</a> <i>arXiv:2411.06524 (2024).</i> <i>Workshop on Customizable NLP (CustomNLP4U) @ EMNLP 2024</i>
+
+<button onclick="HideShowElement('qfs')">More details</button>
+<div id="qfs" style="display: none;">
+
+This paper which was presented as a poster at the CustomNLP4U Workshop proposed to model the <i>readers</i> of query-focused summaries using LLMs in order to <i>re-rank</i> candidate summaries based on information needs. We found that using likelihood-based (e.g., LLM-induced conditional likelihoods) methods to score candidate summaries can perform <i>worse than random</i> and that our method mitigates this through a reader-based re-ranking procedure based on the Rational Speech Acts framework.
+
+</div>
 
 <h3>Identifying and Analyzing Task-Encoding Tokens in Large Language Models (2024)</h3>
-Bai, Yu, Heyan Huang, <b>Cesare Spinoso-Di Piano</b>, Marc-Antoine Rondeau, Sanxing Chen, Yang Gao, and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2401.11323">Analyzing Task-Encoding Tokens in Large Language Models.</a> <i>arXiv:2401.11323 (2024).</i>
+Yu Bai, Heyan Huang, <b>Cesare Spinoso-Di Piano</b>, Marc-Antoine Rondeau, Sanxing Chen, Yang Gao, and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2401.11323">Analyzing Task-Encoding Tokens in Large Language Models.</a> <i>arXiv:2401.11323 (2024).</i>
 
 <button onclick="HideShowElement('tek')">More details</button>
 <div id="tek" style="display: none;">
