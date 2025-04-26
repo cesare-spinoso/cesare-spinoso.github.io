@@ -29,7 +29,7 @@ In terms of research services, I am currently an organizer for the McGill NLP [r
 
 ## Recent News
 
-- **October 2024**: I presented my paper *Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts* as a poster at the [CustomNLP4U Workshop](https://customnlp4u-24.github.io/) at EMNLP 2024. Poster and paper can be found [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
+- **November 2024**: I presented my paper *Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts* as a poster at the [CustomNLP4U Workshop](https://customnlp4u-24.github.io/) at EMNLP 2024. Poster and paper can be found [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
 
 - **July 2024**: Better late than never! I have made a [webpage]({{ "teaching/comp330/fall2023" | relative_url }}) for the Comp 330 (Theory of Computation) class I taught in the Fall 2023. Resources like lecture notes and assignments are now publicly accessible! This compliments a [previous post]({{ "2023/12/14/my_experience_teaching.html" | relative_url }}) I made recounting my teaching experience.
 
