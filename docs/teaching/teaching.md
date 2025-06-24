@@ -9,7 +9,7 @@ I have had the pleasure to tutor students, TA and teach classes in different are
 
 ## Theoretical Computer Science
 
-I had the pleasure of serving as a TA and instructor for the theoretical computer science classes at both Concordia and McGill. I have developed a dedicated webpage for this material (still a work in progress) which you can find [here]( {{ "/teaching/theoretical_cs" | relative_url }}). I have been very bad at adding content recently - 😔 - I hope to finalize the content for future students by the end of the year[^1 Maybe I should stop promising concrete deadlines ...]!
+I had the pleasure of serving as a TA and instructor for the theoretical computer science classes at both Concordia and McGill. I have developed a dedicated webpage for this material (still a work in progress) which you can find [here]( {{ "/teaching/theoretical_cs" | relative_url }}). I have been very bad at adding content recently - 😔 - I hope to finalize the content for future students by the end of the year!
 
 ### Theory of Computation (Comp 330)
 
