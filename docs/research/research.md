@@ -7,6 +7,16 @@ order: 2
 
 Here is a list of my most recent publications.
 
+<h3>\((RSA)^2\): A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding</h3>
+<b>Cesare Spinoso-Di Piano</b>, David Austing, Pablo Piantanida and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2506.09301">$$(RSA)^2$$: A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding</a> <i>arXiv:2411.06524 (2024).</i> <i>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</i>
+
+<button onclick="HideShowElement('rsa_two')">More details</button>
+<div id="rsa_two" style="display: none;">
+
+A record-setting blizzard is raging through Montreal. Your friend says "Wow, the weather is so amazing!" While humans can easily interpret sarcastic or ironic statements like this one, LLMs often struggle with such linguistic phenomena. In this paper (ACL 2025 - Main Conference), we propose a rhetorical-strategy-aware probabilistic framework to model such uses of language. We show that using this framework, we enable LLMs to more realistically interpret non-literal language. In a nutshell, our framework modes figurative language through different <i>rhetorical listeners</i> : one listener will interpret language literally (they will think you mean exactly what you say), another will interpret language ironically (they will think you mean the opposite of what you say), etc. These listeners and their interpretations are then marginalized together to produce distributions which we show are often compatible with human expectations!
+
+</div>
+
 <h3>Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts</h3>
 <b>Cesare Spinoso-Di Piano</b>, and Jackie Chi Kit Cheung. <a href="https://arxiv.org/abs/2411.06524">Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts</a> <i>arXiv:2411.06524 (2024).</i> <i>Workshop on Customizable NLP (CustomNLP4U) @ EMNLP 2024</i>
 

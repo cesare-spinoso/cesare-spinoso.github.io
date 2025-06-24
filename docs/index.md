@@ -15,7 +15,7 @@ Hello and welcome to my website!
 </div> -->
 
 <div style="text-align: center;">
-    <img style="max-width:300px; height:auto;"  src="cspino.png"/>
+    <img style="max-width:300px; height:auto;"  src="cspino_compressed.png"/>
 </div>
 
 <br>
@@ -28,6 +28,8 @@ In terms of research services, I am currently an organizer for the McGill NLP [r
 
 
 ## Recent News
+
+- **June 2025**: New paper *$$(RSA)^2$$: A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding* to appear at ACL 2025 (Main) is out and can be found [here](https://arxiv.org/abs/2506.09301). We're also presenting this work at SCiL 2025; a shorter abstract can be found [here](https://openpublishing.library.umass.edu/scil/article/id/3171/).
 
 - **November 2024**: I presented my paper *Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts* as a poster at the [CustomNLP4U Workshop](https://customnlp4u-24.github.io/) at EMNLP 2024. Poster and paper can be found [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
 
