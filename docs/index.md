@@ -29,6 +29,8 @@ In terms of research services, I am currently an organizer for the McGill NLP [r
 
 ## Recent News
 
+- **July and August 2025**: During my trip to ACL 2025, I visited [Prof. Vera Demberg's group](https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html) at Saarland University and [Prof. Hinrich Schütze's group](https://cisnlp.github.io/) at LMU Munich and give talks about **Capturing Intentions withing Figurative Language**. I didn't record my talks while I was there, so [I have recorded it and posted it to my YouTube channel](https://youtu.be/bT4GFN19TBo).
+
 - **June 2025**: New paper *$$(RSA)^2$$: A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding* to appear at ACL 2025 (Main) is out and can be found [here](https://arxiv.org/abs/2506.09301). We're also presenting this work at SCiL 2025; a shorter abstract can be found [here](https://openpublishing.library.umass.edu/scil/article/id/3171/).
 
 - **November 2024**: I presented my paper *Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts* as a poster at the [CustomNLP4U Workshop](https://customnlp4u-24.github.io/) at EMNLP 2024. Poster and paper can be found [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
