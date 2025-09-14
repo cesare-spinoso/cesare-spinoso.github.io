@@ -29,7 +29,7 @@ In terms of research services, I am currently an organizer for the McGill NLP [r
 
 ## Recent News
 
-- **September 2025**: I am once again TAing COMP 330 at McGill. My office hours will be Thursdays from 1 to 2:30PM (in-person in MC110) and Fridays from 4 to 5:30PM (online via Zoom).
+- **September 2025**: I am once again TAing COMP 330 at McGill. My office hours will be Fridays from 4 to 5:30PM (online via Zoom). I will also have some office hours in person on Thursdays from 1 to 2:30PM, but likely only during "peak" demand times (e.g., before exams).
 
 - **July and August 2025**: During my trip to ACL 2025, I visited [Prof. Vera Demberg's group](https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html) at Saarland University and [Prof. Hinrich Schütze's group](https://cisnlp.github.io/) at LMU Munich and give talks about **Capturing Intentions within Figurative Language**. I didn't record my talks while I was there, so [I have recorded it and posted it to my YouTube channel](https://youtu.be/bT4GFN19TBo).
 
