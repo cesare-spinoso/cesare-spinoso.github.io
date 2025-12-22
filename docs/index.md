@@ -20,14 +20,16 @@ Hello and welcome to my website!
 
 <br>
 
-I'm a PhD student at [McGill University](https://www.cs.mcgill.ca/) and [Mila](https://mila.quebec/en/) where I am advised by [Prof. Jackie Cheung](https://www.cs.mcgill.ca/~jcheung/index.html). I am currently interested in computational pragmatics and world models.
+I'm a PhD student at [McGill University](https://www.cs.mcgill.ca/) and [Mila](https://mila.quebec/en/) where I am advised by [Prof. Jackie Cheung](https://www.cs.mcgill.ca/~jcheung/index.html). I am currently interested in computational pragmatics.
 
 Before starting my PhD, I earned a master's degree in Computer Science from [McGill University](https://www.cs.mcgill.ca/) where I worked with Prof. Cheung along with [Prof. Samira Rahimi](https://rahimislab.ca/) on leveraging NLP techniques to assist health researchers in their analysis of patient-care data. Before my master's, I earned a bachelor's degree in Mathematics, Statistics and Computer Science (Joint Major) from [Concordia University](https://www.concordia.ca/).
 
-In terms of research services, I am currently an organizer for the McGill NLP [reading group](https://mcgill-nlp.github.io/reading-group/) (really more of a seminar series). Before that, I was the organizer of the Mila Health and AI reading group (March 2022 to March 2023).
+In terms of research services, I was an organizer for the McGill NLP [reading group](https://mcgill-nlp.github.io/reading-group/) (2024-205). Before that, I was the organizer of the Mila Health and AI reading group (2022-2023).
 
 
 ## Recent News
+
+- **November 2025**: I gave a talk about $$(RSA)^2$$ to [Lena Palaniyappan's](https://douglas.research.mcgill.ca/lena-palaniyappan/) group at the Douglas Research Centre.
 
 - **June 2025**: New paper *$$(RSA)^2$$: A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding* to appear at ACL 2025 (Main) is out and can be found [here](https://arxiv.org/abs/2506.09301). We're also presenting this work at SCiL 2025; a shorter abstract can be found [here](https://openpublishing.library.umass.edu/scil/article/id/3171/).
 

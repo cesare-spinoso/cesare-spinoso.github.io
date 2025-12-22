@@ -7,7 +7,7 @@ order: 4
 
 Welcome to this Theoretical Computer Science resource page!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OMkP9E62774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OMkP9E62774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
 
 (Sorry about the audio on this video!)
 

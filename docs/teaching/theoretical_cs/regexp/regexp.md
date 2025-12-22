@@ -13,15 +13,15 @@ What exactly is a regular expression? You may have already encountered them in t
 
 This is the introductory video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s-hAXeFij9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s-hAXeFij9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
 
 And this video describes how to determine the language denoted by a certain regular expression. In this case, $$(a+bb)(ab)^*$$.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cm1-78qWrSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cm1-78qWrSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
 
 Okay, now that we have a basic understanding of regular expressions, let's look at an exercise where we try to find __a__ (why not the?) regular expression that denotes a particular language. In this exercise, we find a regular expression for the language $$L = \{ w \in \{0, 1\}^* : w \text{ contains the substring } 101\}$$.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RbwkZA3xvws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RbwkZA3xvws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
 
 More exercises for identifying the languages denoted by regular expressions as well as writing regular expressions to denote particular languages in the Exercises section.
 
@@ -30,10 +30,10 @@ More exercises for identifying the languages denoted by regular expressions as w
 Now that we are a bit more familiar with regular expressions, you might be wondering what exactly is their connection to regular languages. After all, both of these terms have "regular" in them, is that just a wild coincidence? (I honestly don't know the exact answer to that, woops.) In turns out that regular expressions are exactly equivalent to DFAs and NFAs. That is, any language that is accepted by an FA can be described by a regular expression and vice-versa! This is quite an important result because it means that to prove that a language is regular you can now either 1. Create a DFA that accepts it, 2. Create an NFA that accepts or 3. Create a regular expression that denotes it. This is great because sometimes it is easier to design an FA for a particular language and other times a regular expression is more convenient. Now, how is it possible for the family of languages denoted by regular expressions, let's call this $$L_{REX}$$, to be exactly the same as the family of language, $$L_{NFA}$$, accepted by NFAs (and, by extension, DFAs)? Because every regular expression can be converted to an equivalent (N)FA and vice-versa! More in the following videos.
 
 1. Converting regular expressions to NFAs.
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/o2sxCsAWviQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o2sxCsAWviQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
 
 2. Converting NFAs to regular expressions.
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GUdjtZn9V_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GUdjtZn9V_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
 
 <h4>Exercises</h4>
 

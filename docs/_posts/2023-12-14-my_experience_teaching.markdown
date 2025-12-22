@@ -13,12 +13,17 @@ I am extremely lucky and grateful to have been able to teach one of my favourite
 - Giving _two_ blackboard lectures. The first one was unplanned (the S1/4 projector was being capricious), but still enjoyable (to me at least!). The second one which I held during the last lecture was very much planned. I used [Hagoromo](https://hagoromo.shop/) chalk.
 - Taking a _class picture_ with the students at the end of my last lecture. Because I don't want to violate anyone's privacy, I will not post it here. Instead, here are a few pictures that my friend, Ian Porada, and a student took of me during my last lecture.
 
-![]({% link teaching/comp330/fall2023/erasing_quickly.jpg %})
+<img src="/teaching/comp330/fall2023/erasing_quickly.jpg"
+     alt="COMP 330 lecture"
+     width="1000" height="430"
+     loading="lazy" decoding="async" />
 
 **Picture 1:** Me quickly erasing the board. I was rushing through content as I was trying to show the students the incredibly cool _infinite chain of increasingly more impossible problems_.
 
-![]({% link teaching/comp330/fall2023/infinite_chain.jpeg %})
-
+<img src="/teaching/comp330/fall2023/infinite_chain.jpeg"
+     alt="COMP 330 lecture"
+     width="1000" height="430"
+     loading="lazy" decoding="async" />
 
 **Picture 2:** Me very happily pointing at this _infinite chain of increasingly more impossible problems_. I had talked about this during Lecture 1 and so I was extremely happy to finish the class having come full circle.
 
