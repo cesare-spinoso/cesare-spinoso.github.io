@@ -15,7 +15,7 @@ I had the pleasure of serving as a TA and instructor for the theoretical compute
 
 I was extremely lucky to teach the Theory of Computation class at McGill University (also known as Comp 330) during the Fall 2023 semester. I had an unbelievably good time and I hope my students did as well! I have collected a few of my favourite moments and have posted them [here]({{ "2023/12/14/my_experience_teaching.html" | relative_url }}). The **class webpage** can be found [here]({{ "teaching/comp330/fall2023" | relative_url }}).
 
-In addition to having taught the course, I continue to TA it. I have TAed it 5 times: Winter 2025 (Instructor: [Prof. Bérubé-Vallières](https://mathieubv.com/)), Fall 2024 (Instructor: [Prof. Waldispühl](https://www.cs.mcgill.ca/~jeromew/)), Winter 2024 (Instructor: [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html)), Winter 2023 (Instructor: [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html)), Fall 2022 (Instructor: [Prof. Panangaden](https://www.cs.mcgill.ca/~prakash/)).
+In addition to having taught the course, I continue to TA it. I will be TAing it in Fall 2025 (Instructor: [Prof. Waldispühl](https://www.cs.mcgill.ca/~jeromew/)). I have TAed it 5 times already: Winter 2025 (Instructor: [Prof. Bérubé-Vallières](https://mathieubv.com/)), Fall 2024 (Instructor: [Prof. Waldispühl](https://www.cs.mcgill.ca/~jeromew/)), Winter 2024 (Instructor: [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html)), Winter 2023 (Instructor: [Prof. Crépeau](https://www.cs.mcgill.ca/~crepeau/index_en.html)), Fall 2022 (Instructor: [Prof. Panangaden](https://www.cs.mcgill.ca/~prakash/)).
 
 
 ### Introduction to Theoretical Computer Science (Comp 335)

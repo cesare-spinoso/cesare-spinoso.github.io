@@ -29,13 +29,17 @@ In terms of research services, I was an organizer for the McGill NLP [reading gr
 
 ## Recent News
 
-- **November 2025**: I gave a talk about $$(RSA)^2$$ to [Lena Palaniyappan's](https://douglas.research.mcgill.ca/lena-palaniyappan/) group at the Douglas Research Centre.
+- **November 2025**: I gave a talk about $$(RSA)^2$$ to [Lena Palaniyappan's](https://douglas.research.mcgill.ca/lena-palaniyappan/) group at the Douglas Research Centre. We had a nice discussion about the uses of computational pragmatics and $$(RSA)^2$$ in the clinical setting.
+
+- **September 2025**: I once again TAed COMP 330 at McGill giving weekly tutorials which you can find [here](https://www.youtube.com/playlist?list=PLzmPQTTtMivhewMnbjnnQvrVrc375-HSC) as well as office hours. Thanks to all the students who attended!
+
+- **July and August 2025**: During my trip to ACL 2025, I visited [Prof. Vera Demberg's group](https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html) at Saarland University and [Prof. Hinrich Schütze's group](https://cisnlp.github.io/) at LMU Munich and give talks about **Capturing Intentions within Figurative Language**. I didn't record my talks while I was there, so [I have recorded it and posted it to my YouTube channel](https://youtu.be/bT4GFN19TBo).
 
 - **June 2025**: New paper *$$(RSA)^2$$: A Rhetorical-Strategy-Aware Rational Speech Act Framework for Figurative Language Understanding* to appear at ACL 2025 (Main) is out and can be found [here](https://arxiv.org/abs/2506.09301). We're also presenting this work at SCiL 2025; a shorter abstract can be found [here](https://openpublishing.library.umass.edu/scil/article/id/3171/).
 
 - **November 2024**: I presented my paper *Does This Summary Answer My Question? Modeling Query-Focused Summary Readers with Rational Speech Acts* as a poster at the [CustomNLP4U Workshop](https://customnlp4u-24.github.io/) at EMNLP 2024. Poster and paper can be found [here](https://github.com/cesare-spinoso/RSASumm-CustomNLP4U).
 
-- **July 2024**: Better late than never! I have made a [webpage]({{ "teaching/comp330/fall2023" | relative_url }}) for the Comp 330 (Theory of Computation) class I taught in the Fall 2023. Resources like lecture notes and assignments are now publicly accessible! This compliments a [previous post]({{ "2023/12/14/my_experience_teaching.html" | relative_url }}) I made recounting my teaching experience.
+- **July 2024**: Better late than never! I have made a [webpage]({{ "teaching/comp330/fall2023" | relative_url }}) for the Comp 330 (Theory of Computation) class I taught in the Fall 2023. Resources like lecture notes and assignments are now publicly accessible! This complements a [previous post]({{ "2023/12/14/my_experience_teaching.html" | relative_url }}) I made recounting my teaching experience.
 
 - **May 2024**: I gave a lecture on NLP to the 2024 cohort of [AI4Good](https://www.ai4goodlab.com/) students!
 
