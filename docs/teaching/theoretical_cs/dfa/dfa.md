@@ -48,9 +48,13 @@ We know DFAs as language acceptors or recognizers. In fact, languages that can a
 
 {% include_relative exercise_doesnot01.html %}
 
+{% include_relative exercise_aba_substring.html %}
+
 {% include_relative exercise_correctness.html %}
 
 {% include_relative exercise_evena_oddb.html %}
+
+{% include_relative exercise_0mod2_neq_1mod2.html %}
 
 {% include_relative exercise_start01_end10.html %}
 

@@ -54,3 +54,5 @@ If you recognize that a language $$L$$ consists of sub-languages which are combi
 {% include_relative exercise6.html %}
 
 {% include_relative exercise_adiffb.html %}
+
+{% include_relative exercise_duplicate.html %}

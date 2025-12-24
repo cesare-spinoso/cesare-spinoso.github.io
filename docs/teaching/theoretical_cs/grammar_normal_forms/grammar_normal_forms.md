@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/normal_forms
 lesson_name: Normal Forms of CFGs
-order: 12
+order: 13
 ---
 
 <!-- CFG simplification, CFG CNF -->

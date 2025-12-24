@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/context_free_grammars
 lesson_name: Context-Free Grammars (CFGs) and Context-Free Languages (CFLs)
-order: 11
+order: 12
 ---
 
 This section will be about context-free grammars and languages. It will also feature the notion of ambiguous context-free grammars. I will present the definition of context-free grammars and languages. I will also discuss what it means for them to be ambiguous. Lots of exercises about creating CFGs to generate languages can be found at the end of this section. You can find the notes related to this section [here](context_free_grammars.pdf).

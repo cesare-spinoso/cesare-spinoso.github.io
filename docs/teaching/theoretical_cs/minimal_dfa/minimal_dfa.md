@@ -25,6 +25,8 @@ Are you confused? I don't blame you! I was confused the first time I saw the min
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9hFa2wY77D8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
 
+**Important note:** There is an equivalent version of the minimization algorithm that uses a 2x2 table. I discuss it in one of the exercises below.
+
 <h4>Exercises</h4>
 
 <!-- This video has a mistake in it, needs to be corrected -->
@@ -32,5 +34,7 @@ Are you confused? I don't blame you! I was confused the first time I saw the min
 {% include_relative exercise_6states.html %}
 
 {% include_relative exercise_minimal_nfa.html %}
+
+{% include_relative exercise_minimize_dfa.html %}
 
 <!-- Include T/F about minimality and identify of languages -->

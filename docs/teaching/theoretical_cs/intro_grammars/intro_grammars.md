@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/intro_grammars
 lesson_name: Introduction to Grammars
-order: 10
+order: 11
 ---
 
 This section will be about introducing grammars. I will present some intuition behind the idea of grammars and their similarities and differences with FAs. We will formalize this intuition and study a particular type of grammar related to FAs. You can find the notes related to this section [here](intro_grammars.pdf).
