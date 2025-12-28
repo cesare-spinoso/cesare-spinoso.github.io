@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/turing_machines
 lesson_name: Turing Machines
-order: 18
+order: 17
 ---
 
 This section will be about Deterministic Infinite Tape (DIT) Turing Machines (TMs). TMs are **the most expressive** models of computation. By most expressive we mean that whatever additional feature you give to a TM (e.g., multiple tapes, non-determinism, **quantum**), it will accept exactly the same set of languages as the TM you started with. It's this expressive power that makes TMs the theoretical equivalent of the modern-day computer.

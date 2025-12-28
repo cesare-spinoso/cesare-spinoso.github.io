@@ -2,7 +2,7 @@
 layout: lesson_page
 permalink: /teaching/theoretical_cs/dec_rec_red
 lesson_name: Decidability, Recognizability and Turing Reductions
-order: 19
+order: 18
 ---
 
 Now that we've discussed Turing machines, we're ready to define the notions of (Turing) decidability and recognizability for languages *and decision problems*. We will show that there are problems - such as the **halting problem** - that are undecidable and we will also show how we can use (Turing) **reductions** to show that a problem is undecidable.
@@ -17,7 +17,7 @@ In this video, I will present the concept of (Turing) decidability and recogniza
 
 In this video, I show you the infamous proof that the halting problem is undecidable. The technique which I use is very similar to Cantor's diagonalization technique used to show that $$\mathbb{R}$$ is uncountable.
 
-```Add HP proof.```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E6hL_uBvJCc?si=600u8DRYqbeGTt1K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h4>The undecidability hierarchy and reductions</h4>
 
