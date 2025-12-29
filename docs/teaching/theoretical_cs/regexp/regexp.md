@@ -59,6 +59,8 @@ Now that we are a bit more familiar with regular expressions, you might be wonde
 
 {% include_relative exercise_5.html %}
 
+{% include_relative exercise_15.html %}
+
 {% include_relative exercise_14.html %}
 
 {% include_relative exercise_7.html %}

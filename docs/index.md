@@ -29,6 +29,8 @@ In terms of research services, I was an organizer for the McGill NLP [reading gr
 
 ## Recent News
 
+- **December 2025**: After several years, I have finally completed the construction of my ["Intro to Theoretical CS/Theory of Computation" resource page]({{ "teaching/theoretical_cs" | relative_url }})🎉🧮! This webpage is **not meant to be a substitute for lectures**, but rather a supplementary resource for problem solving and for more high-level/intuition-driven explanations. I'm very happy that I was able to get this done before 2026, as it had been a New Year's resolution for 2025! I will likely refine these in the future, but it's great to finally have everything all in one place!
+
 - **November 2025**: I gave a talk about $$(RSA)^2$$ to [Lena Palaniyappan's](https://douglas.research.mcgill.ca/lena-palaniyappan/) group at the Douglas Research Centre. We had a nice discussion about the uses of computational pragmatics and $$(RSA)^2$$ in the clinical setting.
 
 - **September 2025**: I once again TAed COMP 330 at McGill giving weekly tutorials which you can find [here](https://www.youtube.com/playlist?list=PLzmPQTTtMivhewMnbjnnQvrVrc375-HSC) as well as office hours. Thanks to all the students who attended!

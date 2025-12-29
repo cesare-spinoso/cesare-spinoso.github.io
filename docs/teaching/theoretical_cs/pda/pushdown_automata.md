@@ -11,7 +11,7 @@ order: 14
 
 In this section, we will be discussing pushdown automata (PDA), which are the automata equivalent (in expressive power) to context-free grammars. PDA are similar in nature to NFA+$$\varepsilon$$ except that they are equipped with an additional data structure: a stack. I will first give some general intuitions about how PDA work. The rest of the section will be examples and exercises about creating PDA which recognize context-free languages. Note that, technically speaking, this is a presention of **N**PDA: **non-deterministic** pushdown automata. Deterministic pushdown automta are not covered in this section.
 
-# What is a pushdown automata? 
+# What are pushdown automata? 
 
 In this video, I present the high-level intuitions of PDA. This video is taken from a recording of a lecture that I gave in Fall 2024.
 
