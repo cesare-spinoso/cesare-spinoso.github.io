@@ -7,7 +7,7 @@ order: 4
 
 Welcome to this Theoretical Computer Science resource page!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OMkP9E62774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OMkP9E62774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
 
 (Sorry about the audio on this video!)
 
@@ -24,7 +24,7 @@ You will find additional resources related to the topic of theoretical CS that I
     {% endfor %}
 </ul>
 
-**[NEW]:** You might also be interested in this [archived webpage of the Theory of Computation course I taught at McGill in Fall 2023]({% link teaching/comp330/fall2023/index.md %}). Lecture notes and **lecture recordings** are available for most of the lectures I gave. Assignments for you to practice are also available there. 
+**Previous Course Webpage:** You might also be interested in this [archived webpage of the Theory of Computation course I taught at McGill in Fall 2023]({% link teaching/comp330/fall2023/index.md %}). Lecture notes and **lecture recordings** are available for most of the lectures I gave. Assignments for you to practice are also available there. 
 
 <h3>Some thoughts about this topic</h3>
 
