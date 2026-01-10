@@ -35,9 +35,19 @@ You'll remember from the closure properties of regular languages that some opera
 
 <h4>Exercises</h4>
 
+{% include_relative exercise6.html %}
+
 {% include_relative exercise1.html %}
 
 {% include_relative exercise2.html %}
+
+{% include_relative exercise8.html %}
+
+{% include_relative exercise9.html %}
+
+{% include_relative exercise11.html %}
+
+{% include_relative exercise10.html %}
 
 {% include_relative exercise3.html %}
 
@@ -45,12 +55,12 @@ You'll remember from the closure properties of regular languages that some opera
 
 {% include_relative exercise5.html %}
 
-{% include_relative exercise6.html %}
+{% include_relative exercise12.html %}
+
+{% include_relative exercise13.html %}
 
 {% include_relative exercise7.html %}
 
-{% include_relative exercise8.html %}
 
-{% include_relative exercise9.html %}
 
-{% include_relative exercise10.html %}
+

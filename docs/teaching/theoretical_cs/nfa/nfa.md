@@ -51,3 +51,7 @@ We are now equipped with an algorithm that converts any NFA to an equivalent DFA
 {% include_relative exercise4.html %}
 
 {% include_relative exercise2.html %}
+
+{% include_relative exercise5.html %}
+
+{% include_relative exercise6.html %}

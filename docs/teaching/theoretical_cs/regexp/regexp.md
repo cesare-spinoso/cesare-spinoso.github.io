@@ -41,12 +41,28 @@ Now that we are a bit more familiar with regular expressions, you might be wonde
 
 {% include_relative exercise_2.html %}
 
+{% include_relative exercise_8.html %}
+
+{% include_relative exercise_11.html %}
+
 {% include_relative exercise_3.html %}
+
+{% include_relative exercise_9.html %}
+
+{% include_relative exercise_10.html %}
+
+{% include_relative exercise_12.html %}
+
+{% include_relative exercise_6.html %}
 
 {% include_relative exercise_4.html %}
 
 {% include_relative exercise_5.html %}
 
-{% include_relative exercise_6.html %}
+{% include_relative exercise_15.html %}
+
+{% include_relative exercise_14.html %}
 
 {% include_relative exercise_7.html %}
+
+{% include_relative exercise_13.html %}

@@ -5,7 +5,7 @@ lesson_name: Languages
 order: 2
 ---
 
-This section will be about strings, languages and language operations. You can find the related notes [here](languages.pdf).
+This section will be about strings, languages and language operations. You can find the related notes [here](languages.pdf). **Note:** When discussing the empty string you may see with $$\lambda$$ or $$\varepsilon$$. Please be aware that these are the same string, namely the string of length 0.
 
 <h4>Definitions and Properties</h4>
 
@@ -24,3 +24,16 @@ Much like sets, languages also have associated operations. I discuss some of the
 {% include_relative exercise1.html %}
 
 {% include_relative exercise2.html %}
+
+{% include_relative exercise3.html %}
+
+{% include_relative exercise4.html %}
+
+{% include_relative exercise5.html %}
+
+{% include_relative exercise6.html %}
+
+{% include_relative exercise7.html %}
+
+{% include_relative exercise8.html %}
+

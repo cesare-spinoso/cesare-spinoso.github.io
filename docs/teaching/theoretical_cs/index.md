@@ -24,7 +24,7 @@ You will find additional resources related to the topic of theoretical CS that I
     {% endfor %}
 </ul>
 
-**[NEW]:** You might also be interested in this [archived webpage of the Theory of Computation course I taught at McGill in Fall 2023]({% link teaching/comp330/fall2023/index.md %}). Lecture notes and **lecture recordings** are available for most of the lectures I gave. Assignments for you to practice are also available there. 
+**Previous Course Webpage:** You might also be interested in this [archived webpage of the Theory of Computation course I taught at McGill in Fall 2023]({% link teaching/comp330/fall2023/index.md %}). Lecture notes and **lecture recordings** are available for most of the lectures I gave. Assignments for you to practice are also available there. 
 
 <h3>Some thoughts about this topic</h3>
 
