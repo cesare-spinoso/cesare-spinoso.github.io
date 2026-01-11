@@ -29,7 +29,7 @@ In terms of research services, I was an organizer for the McGill NLP [reading gr
 
 ## Recent News
 
-- **January 2026**: I will (sadly) not be TAing any classes at McGill this semester. I've also stepped down as organizer of the [McGill/Mila NLP reading group](https://mcgill-nlp.github.io/reading-group/). In happier news, I've fixed this webpage so that the load times *should* be much faster than they were before 🤞. 
+- **January 2026**: I will (sadly) not be TAing any classes at McGill this semester. I will also (again, sadly) no longer be an organizer of the [McGill/Mila NLP reading group](https://mcgill-nlp.github.io/reading-group/). In happier news, I've fixed this webpage so that the load times *should* be much faster than they were before 🤞. 
 
 - **December 2025**: After several years, I have finally completed the construction of my ["Intro to Theoretical CS/Theory of Computation" resource page]({{ "teaching/theoretical_cs" | relative_url }})🎉🧮! This webpage is **not meant to be a substitute for lectures**, but rather a supplementary resource for problem solving and for more high-level/intuition-driven explanations. I'm very happy that I was able to get this done before 2026, as it had been a New Year's resolution for 2025! I will likely refine these in the future, but it's great to finally have everything all in one place!
 
